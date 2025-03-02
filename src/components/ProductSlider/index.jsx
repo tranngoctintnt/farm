@@ -7,8 +7,8 @@ import ProductItems from "../ProductItems";
 
 const ProductSlider = (props) => {
   return (
-    <section className="productSlider py-5">
-      <div className="container">
+    <section className="productSlider py-3">
+      {/* <div className="container"> */}
         <Swiper
           // install Swiper modules
           modules={[Navigation]}
@@ -20,8 +20,28 @@ const ProductSlider = (props) => {
           <SwiperSlide>
             <ProductItems/>
           </SwiperSlide>
+
+          <SwiperSlide>
+            <ProductItems/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <ProductItems/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <ProductItems/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <ProductItems/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <ProductItems/>
+          </SwiperSlide>
         </Swiper>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
