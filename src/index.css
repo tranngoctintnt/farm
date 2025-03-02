@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header .top-strip{
+  border-top: 1px solid rgb(0, 0, 0,0.1);
+  border-bottom: 1px solid rgb(0, 0, 0,0.1);
+}
+
+.link:hover{
+  color: #ff5252;
+}
+
+.MuiBadge-badge{
+  background-color: #ff5252 !important;
+}
+
+nav ul button{
+  border-radius: 30px !important;
+  text-transform: capitalize !important;
+}
+
+nav ul button:hover{
+  background: #f1f1f1;
+  /* color: #000; */
+}
+
+.sliderHome{
+  overflow: inherit !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f,0 1px 2px #0000003d!important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: #000;
+  font-size: 22px !important;
+}
+
+.letter{
+  background: linear-gradient(to bottom right,#4a2888,#7a55c1); 
+}
+
+.MuiTabs-indicator{
+  background-color: #ff5252 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected{
+  color: #ff5252 !important;
+}

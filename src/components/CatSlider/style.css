@@ -1,0 +1,34 @@
+.homCatSlider{
+    padding-top: 3rem;
+}
+
+.homCatSlider h2{
+    text-transform: uppercase;
+}
+
+.homCatSlider .futureCate{
+    overflow: inherit;
+}
+
+.homCatSlider .futureCate .item{
+    transition: all .2s ease-in-out;
+    border: 1px solid #0000001a;
+}
+
+.homCatSlider .futureCate .item:hover{
+    box-shadow: 0 3px 6px #00000029,0 3px 6px #0000003b;
+    transform: translateY(-5px);
+}
+
+.homCatSlider .futureCate .item:hover img{
+    animation: mover .7s infinite alternate;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}

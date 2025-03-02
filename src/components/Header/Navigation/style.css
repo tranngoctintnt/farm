@@ -1,0 +1,19 @@
+.nav li:hover .submenu{
+     visibility: hidden;
+}
+
+.nav li:hover .submenu{
+    opacity: 1;
+    visibility: inherit;
+}
+
+.nav li .submenu{
+    z-index: 100;
+    transition: all .2sease-in-out;
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003b;
+}
+
+.nav li .submenu li:hover button{
+    color: #ff5252 !important;
+}
+
