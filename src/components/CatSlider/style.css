@@ -1,26 +1,28 @@
-.homCatSlider{
-    padding-top: 3rem;
+.homCatSlider .list-items{
+    background-image: url('/background-cate.png');
+    /* padding-top: 3rem; */
 }
 
-.homCatSlider h2{
+.homCatSlider h3{
     text-transform: uppercase;
+    font-family: 'UTM Americana';
 }
 
-.homCatSlider .futureCate{
+.homCatSlider .cate{
     overflow: inherit;
 }
 
-.homCatSlider .futureCate .item{
+.homCatSlider .cate .item{
     transition: all .2s ease-in-out;
     border: 1px solid #0000001a;
 }
 
-.homCatSlider .futureCate .item:hover{
+.homCatSlider .cate .item:hover{
     box-shadow: 0 3px 6px #00000029,0 3px 6px #0000003b;
     transform: translateY(-5px);
 }
 
-.homCatSlider .futureCate .item:hover img{
+.homCatSlider .cate .item:hover img{
     animation: mover .7s infinite alternate;
 }
 

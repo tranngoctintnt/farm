@@ -1,36 +1,109 @@
 import React from "react";
-import HomeSlider from "../../components/HomeSlider";
-import HomeCatSlier from "../../components/CatSlider";
-import { CgMail } from "react-icons/cg";
-import { Button } from "@mui/material";
-import AdsBannerSlider from "../../components/AdsBannerSlider";
+import HomeBanner from "../../components/HomeBanner";
 
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import ProductSlider from "../../components/ProductSlider";
-import BlogItem from "../../components/BlogItem";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import Footer from "../../components/Footer";
+import HomeCatSlier from "../../components/CatSlider";
 import { Link } from "react-router-dom";
-import HomeBannerV2 from "../../components/HomSliderV2";
-import BannerBoxV2 from "../../components/BannerBoxV2";
+import { Button } from "@mui/material";
 
 const Home = () => {
-  const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
     <>
-      <HomeSlider />
+      <HomeBanner />
+
+      <section className="py-9">
+        <div className="my-job">
+          <div className="title-myjob flex justify-center">
+            <h2 className="mt-[69px] text-[49px] text-[#998675]">
+              “NGHỀ CHÚNG TÔI...
+            </h2>
+          </div>
+
+          <div className="content-myjob flex">
+            <div className="col-1 !w-[33.333%] relative">
+              <img
+                className="absolute left-[-8%]"
+                src="/thuhoach.png"
+                alt="thu-hoach-nho"
+              />
+            </div>
+            <div className="col-2 !w-[33.333%] mt-[20px] ml-[30px]">
+              <div className="description-myjob">
+                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                  Gieo trồng không chỉ là cây trái, mà là niềm tin vào đất mẹ và
+                  thực phẩm sạch.
+                </p>
+                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                  Mỗi hạt giống nảy mầm là một cam kết, mỗi mùa vụ là một hành
+                  trình trao đi sự tươi lành.
+                </p>
+
+                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                  Trồng bằng tình yêu, chăm bằng sự tận tâm, để mỗi bữa ăn không
+                  chỉ ngon mà còn trọn vẹn thiên nhiên.
+                </p>
+
+                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                  Gieo mầm hôm nay, gặt hái sức khỏe mai sau!”
+                </p>
+              </div>
+            </div>
+            <div className="col-3 !w-[33.333%] relative">
+              <img
+                className="absolute top-[24%]"
+                src="/thuhoachsung.png"
+                alt="thu-hoach-sung"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <HomeCatSlier />
+
+      <section className=" bg-white">
+        <div className="deal relative">
+          <div className="content-deal flex flex-col items-center justify-between">
+            <h2 className="text-[49px] text-[#998675]">Deal “hời” hôm nay</h2>
+            <h2 className="mr-[450px] mt-[65px] text-[#534741] text-[49px]">ƯU ĐÃI GIÁ</h2>
+            <div className="info flex items-center justify-center">
+              <h1 className="head-sung text-[100px]">SUNG </h1>
+              <img className="" src="/sung-other.png" alt="" />
+              <h1 className="head-sung text-[100px]">MỸ </h1>
+            </div>
+            <h1 className="discout text-[90px] ml-[425px]">50%</h1>
+
+            <div className="mt-[50px] flex items-center gap-8">
+              <Link className="transition" to='/'>
+                <Button className="!bg-[#D86500] !w-[156px] !text-white !px-[25px] !py-[8px] !rounded-[20px]">
+                  MUA NGAY
+                </Button>
+              </Link>
+
+              <Link className="transition" to='/'>
+                <Button className="!text-[#D86500] !w-[156px] !rounded-[20px] !border !border-solid">
+                  ƯU ĐÃI
+                </Button>
+              </Link>
+
+              <Link className="transition" to='/'>
+                <Button className="!text-[#D86500] !w-[156px] !rounded-[20px] !border !border-solid">
+                  SPECIAL
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          <div className="img-deal absolute left-[-4%] top-[52%]">
+            <img src="/deal-sung.png" alt="deal" />
+          </div>
+          
+        </div>
+      </section>
+
+      {/* <HomeCatSlier />
 
       <section className="py-5">
         <div className="container">
@@ -177,7 +250,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer/>
+      <Footer/> */}
     </>
   );
 };

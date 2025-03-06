@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -9,117 +8,41 @@ import { Link } from "react-router-dom";
 
 const HomeCatSlier = () => {
   return (
-    <div className="homCatSlider">
-      <div className="container">
-        <div className="title">
-          <h2 className="font-[600]">Featured Categories</h2>
-        </div>
-
-        <div className="list-items py-5">
-          <Swiper
-            // install Swiper modules
-            loop={true}
-            modules={[Navigation]}
-            spaceBetween={10}
-            slidesPerView={8}
-            navigation={true}
-            className="futureCate"
-          >
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#ecffec] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#feefae] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img src="/nho.png" alt="Nho" className="w-[120px]" />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Nho</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#fdf0ff] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#fdf0ff] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#fdf0ff] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#fdf0ff] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#fdf0ff] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Link to="/">
-                <div className="item bg-[#fdf0ff] rounded-[100%] w-[150px] !min-w-[150px] !h-[150px] text-center flex items-center justify-center flex-col cursor-pointer">
-                  <img
-                    src="/sung.png"
-                    alt="Sung"
-                    className="w-[120px]"
-                  />
-                </div>
-                <h3 className="text-center py-3 font-[600]">Sung</h3>
-              </Link>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+    <div className="homCatSlider relative ">
+      <div className="list-items h-[423px] z-50 ">
       </div>
+      <div className="absolute w-full top-[-7%] flex py-5 items-center justify-center gap-[8rem]">
+        <Link className="cate" to="/">
+          <div className="item bg-[url('/bg-nho.png')] bg-cover bg-center h-screen rounded-[100%] w-[220px] !min-w-[220px] !h-[220px] text-center flex items-center justify-center flex-col cursor-pointer">
+            <img src="/nho.png" alt="nho" className="w-[200px]" />
+          </div>
+          <h3 className="text-center mt-[25px] py-3 font-[600]">CÁC LOẠI NHO</h3>
+        </Link>
+        <Link className="cate" to="/">
+          <div className="item bg-[url('/bg-sungmy.png')] bg-cover bg-center h-screen rounded-[100%] w-[220px] !min-w-[220px] !h-[220px] text-center flex items-center justify-center flex-col cursor-pointer">
+            <img src="/sung.png" alt="sung my" className="w-[200px]" />
+          </div>
+          <h3 className="text-center mt-[25px] py-3 font-[600]">SUNG MỸ</h3>
+        </Link>
+        <Link className="cate" to="/">
+          <div className="item bg-[url('/bg-oi.png')] bg-cover bg-center h-screen rounded-[100%] w-[220px] !min-w-[220px] !h-[220px] text-center flex items-center justify-center flex-col cursor-pointer">
+            <img src="/oi.png" alt="oi ryby" className="w-[200px]" />
+          </div>
+          <h3 className="text-center mt-[25px] py-3 font-[600]">ỔI RUBY</h3>
+        </Link>
+        <Link className="cate" to="/">
+          <div className="item bg-[url('/bg-vusua.png')] bg-cover bg-center h-screen rounded-[100%] w-[220px] !min-w-[220px] !h-[220px] text-center flex items-center justify-center flex-col cursor-pointer">
+            <img src="/vusua.png" alt="vu sua hoang kim" className="w-[200px]" />
+          </div>
+          <h3 className="text-center mt-[25px] py-3 font-[600]">VÚ SỮA HOÀNG KIM</h3>
+        </Link>
+        <Link className="cate" to="/">
+          <div className="item bg-[url('/bg-hong.png')] bg-cover bg-center h-screen rounded-[100%] w-[220px] !min-w-[220px] !h-[220px] text-center flex items-center justify-center flex-col cursor-pointer">
+            <img src="/hong-socola.png" alt="hong socola" className="w-[200px]" />
+          </div>
+          <h3 className="text-center mt-[25px] py-3 font-[600]">HỒNG SOCOLA</h3>
+        </Link>
+        </div>
     </div>
   );
 };

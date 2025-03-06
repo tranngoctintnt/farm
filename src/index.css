@@ -8,25 +8,85 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'SFUInsigniaRegular';
+  src: url('./assets/font/SFUInsigniaRegular.ttf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Americana';
+  src: url('./assets/font/UTM Americana.ttf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('./assets/font/Montserrat-SemiBold.ttf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DFVN Salute';
+  src: url('./assets/font/DFVN Salute.otf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+DFVN Salute
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
+}
+
+button{
+  font-family: "SFUInsigniaRegular", sans-serif !important;
+
+}
+
+.link:hover{
+  color: #ff5252;
 }
 .container {
   width: 80%;
   margin: auto;
 }
 
-header .top-strip{
-  border-top: 1px solid rgb(0, 0, 0,0.1);
-  border-bottom: 1px solid rgb(0, 0, 0,0.1);
+.homeBanner .content-Banner h2{
+  font-family: "UTM Americana", sans-serif !important;
 }
 
-.link:hover{
-  color: #ff5252;
+.my-job .tilte-myjob{
+  font-family: "UTM Americana", sans-serif !important;
 }
 
+
+.deal h2{
+  font-family: "UTM Americana", sans-serif !important;
+  text-transform: uppercase;
+}
+
+.deal h1.head-sung{
+  font-family: "DFVN Salute", sans-serif !important;
+  text-transform: uppercase;
+  color: #A94927;
+}
+
+
+.deal h1.discout{
+  font-family: "UTM Americana", sans-serif !important;
+
+  color: #534741;
+}
+
+.product-list .title-product h2{
+  font-family: "UTM Americana", sans-serif !important;
+}
+/* 
 .MuiBadge-badge{
   background-color: #ff5252 !important;
 }
@@ -38,7 +98,6 @@ nav ul button{
 
 nav ul button:hover{
   background: #f1f1f1;
-  /* color: #000; */
 }
 
 .sliderHome{
@@ -120,4 +179,4 @@ nav ul button:hover{
 
 .homeSwiperV2 .info .btn_{
   transition-duration: 2.1s;
-}
+} */
