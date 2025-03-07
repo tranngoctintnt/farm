@@ -1,5 +1,8 @@
 .homCatSlider .list-items{
     background-image: url('/background-cate.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     /* padding-top: 3rem; */
 }
 

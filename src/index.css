@@ -35,12 +35,13 @@
   font-weight: normal;
   font-style: normal;
 }
-DFVN Salute
 
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 button{
@@ -52,39 +53,82 @@ button{
   color: #ff5252;
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
-.homeBanner .content-Banner h2{
+/* .homeBanner .content-Banner h2{
   font-family: "UTM Americana", sans-serif !important;
-}
+} */
 
-.my-job .tilte-myjob{
+/* .my-job .tilte-myjob{
   font-family: "UTM Americana", sans-serif !important;
-}
+} */
 
-
+/* 
 .deal h2{
   font-family: "UTM Americana", sans-serif !important;
   text-transform: uppercase;
-}
+} */
 
-.deal h1.head-sung{
+/* .deal h1.head-sung{
   font-family: "DFVN Salute", sans-serif !important;
   text-transform: uppercase;
   color: #A94927;
-}
+} */
 
-
+/* 
 .deal h1.discout{
   font-family: "UTM Americana", sans-serif !important;
 
   color: #534741;
+} */
+
+/* .product-list .title-product h2{
+  font-family: "UTM Americana", sans-serif !important;
+} */
+
+.swiper-button-prev, .swiper-button-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f,0 1px 2px #0000003d!important;
 }
 
-.product-list .title-product h2{
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: #000;
+  font-size: 22px !important;
+}
+
+.info-stf{
+  background-image: url(/public/bg-info.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .frui .title-frui{
   font-family: "UTM Americana", sans-serif !important;
+} */
+
+.swiper-slide .box img{
+  width: 375px !important;
+  height: 265px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet-active{
+  background:#ff5252 !important;
 }
 /* 
 .MuiBadge-badge{

@@ -5,41 +5,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import ProductItems from "../ProductItems";
 
-const ProductSlider = (props) => {
+const ProductSlider = () => {
   return (
-    <section className="productSlider py-3">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation]}
-          spaceBetween={10}
-          slidesPerView={props.items}
-          navigation={true}
-          className="futureCate"
-        >
-          <SwiperSlide>
+    <section className="productSlider flex items-center justify-around py-10 gap-10">
+      
             <ProductItems/>
-          </SwiperSlide>
 
-          <SwiperSlide>
             <ProductItems/>
-          </SwiperSlide>
 
-          <SwiperSlide>
             <ProductItems/>
-          </SwiperSlide>
 
-          <SwiperSlide>
             <ProductItems/>
-          </SwiperSlide>
 
-          <SwiperSlide>
-            <ProductItems/>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <ProductItems/>
-          </SwiperSlide>
-        </Swiper>
       {/* </div> */}
     </section>
   );

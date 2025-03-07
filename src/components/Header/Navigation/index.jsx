@@ -20,7 +20,7 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <div className={`w-full fixed py-4 flex transition-all z-50 duration-1000 ${
-        isScrolled ? "bg-[#FFA500] items-center top-0 left-0 justify-center gap-5" : "bg-[#FFA500] items-center justify-center gap-5"} `}>
+        isScrolled ? "bg-[#FFA500] items-center top-0 left-0 justify-center gap-5 rounded-[40px]" : "bg-[#FFA500] items-center justify-center gap-5"} `}>
           <ul className="flex items-center gap-5 nav">
             <li className="list-none relative">
               <Link to="/" className="link transition">

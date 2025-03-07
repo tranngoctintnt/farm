@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        salute: ["DFVN Salute", "sans-serif"],
+        americana: ["UTM Americana", "serif"],
+        insigniaRegular:["SFUInsigniaRegular","sans-serif"]
+      },
       colors:{
         primary:'#ff5252'
       },

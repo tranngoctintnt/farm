@@ -6,17 +6,25 @@ import "swiper/css/navigation";
 import HomeCatSlier from "../../components/CatSlider";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import ProductItems from "../../components/ProductItems";
+import ProductSlider from "../../components/ProductSlider";
+import BannerBoxV2 from "../../components/BannerBoxV2";
+import FarmTable from "../../components/FarmTable";
+import FeedFarm from "../../components/FeedFarm";
+import AdsBannerSlider from "../../components/AdsBannerSlider";
+import BlogItem from "../../components/BlogItem";
+import FirstBlog from "../../components/FirstBlog";
+import SecBlog from "../../components/SecBlog";
 
 const Home = () => {
-
   return (
     <>
       <HomeBanner />
 
       <section className="py-9">
-        <div className="my-job">
+        <div className="my-job h-[624px]">
           <div className="title-myjob flex justify-center">
-            <h2 className="mt-[69px] text-[49px] text-[#998675]">
+            <h2 className="mt-[69px] text-[49px] text-[#998675] font-americana">
               “NGHỀ CHÚNG TÔI...
             </h2>
           </div>
@@ -24,7 +32,7 @@ const Home = () => {
           <div className="content-myjob flex">
             <div className="col-1 !w-[33.333%] relative">
               <img
-                className="absolute left-[-8%]"
+                className="absolute left-0"
                 src="/thuhoach.png"
                 alt="thu-hoach-nho"
               />
@@ -52,7 +60,7 @@ const Home = () => {
             </div>
             <div className="col-3 !w-[33.333%] relative">
               <img
-                className="absolute top-[24%]"
+                className="absolute right-0 top-[24%]"
                 src="/thuhoachsung.png"
                 alt="thu-hoach-sung"
               />
@@ -63,32 +71,34 @@ const Home = () => {
 
       <HomeCatSlier />
 
-      <section className=" bg-white">
+      <section className=" h-[920px] bg-white">
         <div className="deal relative">
           <div className="content-deal flex flex-col items-center justify-between">
             <h2 className="text-[49px] text-[#998675]">Deal “hời” hôm nay</h2>
-            <h2 className="mr-[450px] mt-[65px] text-[#534741] text-[49px]">ƯU ĐÃI GIÁ</h2>
+            <h2 className="mr-[450px] mt-[65px] text-[#534741] text-[49px] uppercase font-americana">
+              ƯU ĐÃI GIÁ
+            </h2>
             <div className="info flex items-center justify-center">
-              <h1 className="head-sung text-[100px]">SUNG </h1>
+              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">SUNG </h1>
               <img className="" src="/sung-other.png" alt="" />
-              <h1 className="head-sung text-[100px]">MỸ </h1>
+              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">MỸ </h1>
             </div>
-            <h1 className="discout text-[90px] ml-[425px]">50%</h1>
+            <h1 className="discout text-[90px] ml-[425px] font-americana text-[#534741s]">50%</h1>
 
             <div className="mt-[50px] flex items-center gap-8">
-              <Link className="transition" to='/'>
+              <Link className="transition" to="/">
                 <Button className="!bg-[#D86500] !w-[156px] !text-white !px-[25px] !py-[8px] !rounded-[20px]">
                   MUA NGAY
                 </Button>
               </Link>
 
-              <Link className="transition" to='/'>
+              <Link className="transition" to="/">
                 <Button className="!text-[#D86500] !w-[156px] !rounded-[20px] !border !border-solid">
                   ƯU ĐÃI
                 </Button>
               </Link>
 
-              <Link className="transition" to='/'>
+              <Link className="transition" to="/">
                 <Button className="!text-[#D86500] !w-[156px] !rounded-[20px] !border !border-solid">
                   SPECIAL
                 </Button>
@@ -96,10 +106,160 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="img-deal absolute left-[-4%] top-[52%]">
+          <div className="img-deal absolute left-0 top-[52%]">
             <img src="/deal-sung.png" alt="deal" />
           </div>
-          
+        </div>
+      </section>
+
+      <section className="py-6">1
+        <div className="product-list container flex flex-col items-center gap-6">
+          <div className="title-product flex items-center justify-center">
+            <h2 className="text-[40px] uppercase text-[#6B693B] font-americana">
+              Sạch ngon chuẩn gu - Mua ngay chẳng ngại
+            </h2>
+          </div>
+
+          <ProductSlider items={4} />
+
+          <Link className="transition" to="/">
+            <Button className="upercase !text-[16px] !py-0 !text-[#D86500] !pr-8 !rounded-none hover:bg-white !border-solid !border-b-2">
+              Xem thêm trái cây tươi
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      <section className="py-8 mt-[150px]">
+        <div className="info-stf h-[1100px] relative">
+          <div className="container">
+            <div className="!w-[50%] content-stf ml-[350px] flex flex-col items-start bg-info">
+              <h3 className="uppercase mt-[40px] text-[38px] text-[#9DC76F]">
+                Nông trại xanh
+              </h3>
+              <h2 className="title-info uppercase text-[78px] text-white">
+                Suối Tiên Farm
+              </h2>
+              <h3 className="uppercase text-[38px] text-[#9DC76F]">
+                Giữa lòng huyền thoại Suối Tiên
+              </h3>
+
+              <p className="text-[21px] text-white">
+                Nông trại giữa công viên giải trí? Nghe lạ nhưng Suối Tiên Farm
+                chính là điểm chạm giữa thiên nhiên thuần khiết và trải nghiệm
+                độc đáo!
+              </p>
+
+              <p className="text-[21px] text-white mt-[20px]">
+                Suối Tiên Farm là một phần của hành trình Suối Tiên <br /> hướng
+                đến du lịch bền vững – gìn giữ bản sắc, <br /> nhưng vẫn chất và
+                khác biệt!
+              </p>
+
+              <p className="text-[50px] text-white mt-[20px]">01</p>
+              <p className="text-[21px] text-white">Nông nghiệp kiểu mới</p>
+
+              <p className="text-[50px] text-white mt-[20px]">02</p>
+              <p className="text-[21px] text-white">
+                Ăn lành - Chill chất - Detox cơ thể
+              </p>
+
+              <p className="text-[50px] text-white mt-[20px]">03</p>
+              <p className="text-[21px] text-white">
+                Check-in xanh giữa thế giới huyền thoại
+              </p>
+
+              <Link className="transition mt-[68px]" to="/">
+                <Button className="!text-[22px] uppercase !rounded-[30px] !bg-[#9DC76F] !py-2 !px-8 !text-white">
+                  Xem Thêm
+                </Button>
+              </Link>
+            </div>
+
+            <div className="img-info absolute top-[-39%] right-0">
+              <img src="/img-info.png" alt="bg nho" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8">
+        <div className="frui flex items-center relative justify-center">
+          <div className="col w-[25%]">
+            <img
+              className="absolute top-[-11%] w-[380px] left-0"
+              src="/bg-luu.png"
+              alt="bg luu"
+            />
+          </div>
+          <div className="col w-[50%]">
+            <h2 className="title-frui uppercase text-[64px] pb-10 text-[#6B693B] font-americana">
+              Các loại trái
+            </h2>
+
+            <BannerBoxV2 image={"/nho.png"} />
+            <BannerBoxV2 image={"/sung1_1.png"} />
+            <BannerBoxV2 image={"/hong-socola.png"} />
+
+            <div className="frui-button flex mt-[60px] items-center justify-center gap-6">
+              <Link className="transition" to="/">
+                <Button className="uppercase !px-8 !w-[156px] !rounded-[20px] !bg-[#6B693B] !text-white">
+                  Mua ngay
+                </Button>
+              </Link>
+              <Link className="transition" to="/">
+                <Button className="uppercase !px-8 !w-[156px] !border !border-solid !border-[#6B693B] !rounded-[20px] !text-[#6B693B]">
+                  Menu
+                </Button>
+              </Link>
+              <Link className="transition" to="/">
+                <Button className="uppercase !px-8 !w-[156px] !border !border-solid !border-[#6B693B] !rounded-[20px] !text-[#6B693B]">
+                  Tìm hiểu
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div className="col w-[25%]">
+            <img
+              className="absolute right-0 w-[380px]"
+              src="/bg-sung.png"
+              alt="bg sung"
+            />
+          </div>
+        </div>
+      </section>
+
+      <FarmTable />
+
+      {/* <AdsBannerSlider items={3}/> */}
+
+      <section className="py-[40px] khonggian relative">
+        <div className="bg-kgian">
+          <h2 className="uppercase absolute left-[34%] top-0 text-center text-[50px] text-[#6B693B] font-americana">Dạo quanh <br/> không gian xanh mát</h2>
+          <img src="/bg-khonggianxanh.png" alt="khong gian xanh" />
+        </div>
+
+        <div className="blog-list absolute w-full top-[45%]">
+          <div className=" m-auto gap-8 w-[70%]">
+            <div className="mt-[40px] feed-list">
+              <FeedFarm items={3} />
+            </div>
+            <div className="mt-[40px] flex justify-center gap-10">
+              <div className="fist-blog w-[60%]">
+                <FirstBlog />
+              </div>
+
+              <div className="fist-blog w-[40%]">
+                <SecBlog />
+              </div>
+            </div>
+          </div>
+
+          <BlogItem />
+        </div>
+
+        <div className="absolute w-[420px] top-[275%] opacity-50">
+          <img src="/khonggianxanh.png" alt="khong gian xanh" />
         </div>
       </section>
 

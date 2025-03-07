@@ -8,7 +8,7 @@ const HomeBanner = () => {
     <div className="homeBanner">
       <div className="backgroundBanner bg-[#FFA500] h-[510px] max-h-[510px]">
         <div className="content-Banner flex flex-col relative justify-start">
-          <h2 className="text-[64px] ml-[300px]  text-[#fff] mt-[91px]">
+          <h2 className="text-[64px] ml-[300px]  text-[#fff] mt-[91px] !font-americana">
             SUỐI TIÊN FARM
           </h2>
             <div className="!bg-[#f5deb3] h-[91px] opacity-30"></div>

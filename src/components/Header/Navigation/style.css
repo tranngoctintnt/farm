@@ -1,3 +1,11 @@
+nav li button{
+    border-radius: 25px !important;
+}
+
 nav li button:first-child{
     color: #000;
+}
+
+nav li button:hover{
+    background: #fff;
 }
