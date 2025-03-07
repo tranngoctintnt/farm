@@ -8,7 +8,7 @@ import BannerBox from "../BannerBox";
 
 const FeedFarm = (props) => {
   return (
-    <div className="py-5 w-full">
+    <div className="w-full">
       <div className="container flex">
         <Swiper
           slidesPerView={props.items}
@@ -24,7 +24,7 @@ const FeedFarm = (props) => {
           spaceBetween={30}
           
           modules={[Grid, Pagination, Navigation]}
-          className="feedSlider w-[80%]"
+          className="feedSlider"
         >
           <SwiperSlide>
             <BannerBox img="/feed1.png" />

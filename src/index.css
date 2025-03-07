@@ -53,7 +53,7 @@ button{
   color: #ff5252;
 }
 .container {
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 
@@ -116,10 +116,10 @@ button{
   font-family: "UTM Americana", sans-serif !important;
 } */
 
-.swiper-slide .box img{
+/* .swiper-slide .box img{
   width: 375px !important;
   height: 265px !important;
-}
+} */
 
 .swiper-pagination .swiper-pagination-bullet{
   width: 15px;

@@ -15,14 +15,17 @@ import AdsBannerSlider from "../../components/AdsBannerSlider";
 import BlogItem from "../../components/BlogItem";
 import FirstBlog from "../../components/FirstBlog";
 import SecBlog from "../../components/SecBlog";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 const Home = () => {
   return (
     <>
+    {/* <Header/> */}
       <HomeBanner />
 
-      <section className="py-9">
-        <div className="my-job h-[624px]">
+      <section className="py-9 h-[624px]">
+        <div className="my-job ">
           <div className="title-myjob flex justify-center">
             <h2 className="mt-[69px] text-[49px] text-[#998675] font-americana">
               “NGHỀ CHÚNG TÔI...
@@ -71,7 +74,7 @@ const Home = () => {
 
       <HomeCatSlier />
 
-      <section className=" h-[920px] bg-white">
+      <section className="pb-[168px] bg-white">
         <div className="deal relative">
           <div className="content-deal flex flex-col items-center justify-between">
             <h2 className="text-[49px] text-[#998675]">Deal “hời” hôm nay</h2>
@@ -79,11 +82,17 @@ const Home = () => {
               ƯU ĐÃI GIÁ
             </h2>
             <div className="info flex items-center justify-center">
-              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">SUNG </h1>
+              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">
+                SUNG{" "}
+              </h1>
               <img className="" src="/sung-other.png" alt="" />
-              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">MỸ </h1>
+              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">
+                MỸ{" "}
+              </h1>
             </div>
-            <h1 className="discout text-[90px] ml-[425px] font-americana text-[#534741s]">50%</h1>
+            <h1 className="discout text-[90px] ml-[425px] font-americana text-[#534741s]">
+              50%
+            </h1>
 
             <div className="mt-[50px] flex items-center gap-8">
               <Link className="transition" to="/">
@@ -106,13 +115,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="img-deal absolute left-0 top-[52%]">
+          <div className="img-deal absolute left-0 w-[500px] top-[52%]">
             <img src="/deal-sung.png" alt="deal" />
           </div>
         </div>
       </section>
 
-      <section className="py-6">1
+      <section className="py-16">
         <div className="product-list container flex flex-col items-center gap-6">
           <div className="title-product flex items-center justify-center">
             <h2 className="text-[40px] uppercase text-[#6B693B] font-americana">
@@ -134,13 +143,13 @@ const Home = () => {
         <div className="info-stf h-[1100px] relative">
           <div className="container">
             <div className="!w-[50%] content-stf ml-[350px] flex flex-col items-start bg-info">
-              <h3 className="uppercase mt-[40px] text-[38px] text-[#9DC76F]">
+              <h3 className="uppercase mt-[20px] text-[34px] text-[#9DC76F]">
                 Nông trại xanh
               </h3>
-              <h2 className="title-info uppercase text-[78px] text-white">
+              <h2 className="title-info uppercase text-[66px] text-white">
                 Suối Tiên Farm
               </h2>
-              <h3 className="uppercase text-[38px] text-[#9DC76F]">
+              <h3 className="uppercase text-[34px] text-[#9DC76F]">
                 Giữa lòng huyền thoại Suối Tiên
               </h3>
 
@@ -233,35 +242,35 @@ const Home = () => {
 
       {/* <AdsBannerSlider items={3}/> */}
 
-      <section className="py-[40px] khonggian relative">
-        <div className="bg-kgian">
-          <h2 className="uppercase absolute left-[34%] top-0 text-center text-[50px] text-[#6B693B] font-americana">Dạo quanh <br/> không gian xanh mát</h2>
+      <section className="py-[40px] khonggian ">
+        <div className="bg-kgian relative flex flex-col pb-[300px]">
+          <h2 className="uppercase text-center text-[50px] text-[#6B693B] font-americana">
+            Dạo quanh <br /> không gian xanh mát
+          </h2>
           <img src="/bg-khonggianxanh.png" alt="khong gian xanh" />
+          <div className="mt-[40px] w-full top-[33%] absolute feed-list">
+            <FeedFarm items={3} />
+          </div>
         </div>
+     
 
-        <div className="blog-list absolute w-full top-[45%]">
-          <div className=" m-auto gap-8 w-[70%]">
-            <div className="mt-[40px] feed-list">
-              <FeedFarm items={3} />
+      </section>
+      <div className="m-auto flex flex-col gap-8 relative pb-[100px]">
+          <div className="mt-[40px] container flex justify-center gap-10">
+            <div className="fist-blog w-[60%]">
+              <FirstBlog />
             </div>
-            <div className="mt-[40px] flex justify-center gap-10">
-              <div className="fist-blog w-[60%]">
-                <FirstBlog />
-              </div>
 
-              <div className="fist-blog w-[40%]">
-                <SecBlog />
-              </div>
+            <div className="fist-blog w-[40%]">
+              <SecBlog />
             </div>
           </div>
-
           <BlogItem />
+          <div className="w-[420px] absolute top-[65%] opacity-50">
+            <img src="/khonggianxanh.png" alt="khong gian xanh" />
+          </div>
         </div>
-
-        <div className="absolute w-[420px] top-[275%] opacity-50">
-          <img src="/khonggianxanh.png" alt="khong gian xanh" />
-        </div>
-      </section>
+      <Footer/>
 
       {/* <HomeCatSlier />
 

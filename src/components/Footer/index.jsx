@@ -8,147 +8,63 @@ import { IoChatboxOutline } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import '../Footer/style.css'
+import { Button } from "@mui/material";
 
 const Footer = () => {
   return (
-    <footer className="pt-6 bg-[#fafafa]">
-      <div className="container">
-        <div className="topInfo py-4 w-[88%] m-auto flex items-center justify-center gap-2 pb-4 border-b">
-          <div className="col flex items-center gap-3 py-3 px-10 border-r">
-            <GiFruitBowl className="text-[26px]" />
-            <span>Everyday fresh products</span>
-          </div>
-          <div className="col flex items-center gap-3 py-3 px-10 border-r">
-            <LiaShippingFastSolid className="text-[26px] " />
-            <span>Free delivery for order over $70</span>
-          </div>
-          <div className="col flex items-center gap-3 py-3 px-10 border-r">
-            <RiDiscountPercentLine className="text-[26px] " />
-            <span>Daily Mega Discounts</span>{" "}
-          </div>
-          <div className="col flex items-center gap-3 py-3 px-10">
-            <CiBadgeDollar className="text-[26px]" />
-            <span>Best price on the market</span>
-          </div>
+    <footer className="pt-6 relative h-[700px]">
+      <div className="container absolute left-[15%] top-[19%] flex flex-col items-center justify-center">
+        <img className="w-[200px] h-[200px] m-w-[200px]" src="/logo-stf.png" alt="logo footer" />
+
+        <div className="social flex gap-8">
+          <Link className="transition" to='/'>
+            <img src="/fb.png" alt="facebook" />
+          </Link>
+
+          <Link className="transition" to='/'>
+            <img src="/mess.png" alt="mess" />
+          </Link>
+
+          <Link className="transition" to='/'>
+            <img src="/zalo.png" alt="zalo" />
+          </Link>
+
+          
         </div>
 
-        <div className="footer flex py-10">
-          <div className="contactUs w-[33.3333%] border-r">
-            <h2 className="mb-4 text-[18px] font-[600]">Contact us</h2>
-            <p className="text-[14px] mb-4">
-              Suoi Tien Theme Park
-              <br />
-              120 Xa Lo Ha Noi - Phuong Tan Phu - Tp.Thu Duc - Tp.HCM
-            </p>
+        <div className="location flex items-center gap-6 py-[30px]">
+            <img src="/location.png" alt="location" />
+            <span className="text-[#6B693B]">
+            120 Xa Lộ Hà Nội, P. Tân Phú, TP. Thủ Đức, TP.HCM
+            </span>
+        </div>
 
-            <Link to="mailto:phongkinhdoanh@suoitien.com" className="link">
-              phongkinhdoanh@suoitien.com
-            </Link>
-
-            <span className="text-[25px] font-[600] block w-full mt-3 text-primary">
-              1900 636 787
+        <div className="footer-contact flex items-center gap-6">
+            <img src="/phone.png" alt="location" />
+            <span className="text-[#6B693B]">
+           0914 347 787
             </span>
 
-            <div className="flex items-center">
-              <IoChatboxOutline className="text-[40px] text-primary" />
-              <span className="text-[17px] font-[600] pl-5">
-                Online Chat <br />
-                Get Expert Help
-              </span>
-            </div>
-          </div>
-
-          <div className="productFooter w-[33.3333%] pl-8">
-            <h2 className="mb-4 text-[18px] font-[600]">Products</h2>
-            <ul className="list">
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  Prices drop
-                </Link>
-              </li>
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  New products
-                </Link>
-              </li>
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  Best sales
-                </Link>
-              </li>
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  Contact us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="company w-[33.333%]">
-            <h2 className="mb-4 text-[18px] font-[600]">Our Company</h2>
-
-            <ul className="list">
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  Delivery
-                </Link>
-              </li>
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  Legal Notice
-                </Link>
-              </li>
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  Terms and conditions of use
-                </Link>
-              </li>
-              <li className="list-none w-full text-[16px] mb-3">
-                <Link className="link" to="/">
-                  About us
-                </Link>
-              </li>
-            </ul>
-          </div>
+            <img src="/clock.png" alt="location" />
+            <span className="text-[#6B693B]">
+           8.00 am - 5.00 pm (Tư vấn 24/7)
+            </span>
         </div>
 
-       
+        <div className="footer-contact flex items-center gap-6 py-[20px]">
+            <img src="/qa.png" alt="location" />
+            <span className="text-[#6B693B]">
+           Câu hỏi thường gặp (FAQ)
+            </span>
+
+            <img src="/manual.png" alt="location" />
+            <span className="text-[#6B693B]">
+           Hướng dẫn đặt hàng
+            </span>
+        </div>
       </div>
-      <div className="bottomStrip border-t border-[rgba(0,0,0,0.1)] py-3 bg-white">
-          
-          <div className="copyRight container items-center justify-between mt-3 pt-3 pb-3 flex">
-            <p className="mb-0">Copyright 2024. All rights reserved</p>
-
-            <ul className="list flex list-inline ml-auto gap-4 mb-0 socials">
-              <li className="list-none">
-                <Link
-                  to="/"
-                  className="w-[35px] h-[35px] rounded-full border border-[rgba(0,0,0,0.1)] flex items-center justify-center group hover:bg-[#ff5252] transition-all"
-                >
-                  <FaFacebookF className="text-[21px] text-[#595f6a] group-hover:text-white" />
-                </Link>
-              </li>
-              <li className="list-none ">
-                <Link
-                  to="/"
-                  className="w-[35px] h-[35px] rounded-full border border-[rgba(0,0,0,0.1)] flex items-center justify-center group hover:bg-[#ff5252] transition-all"
-                >
-                  <FaInstagram className="text-[21px] text-[#595f6a] group-hover:text-white" />
-                </Link>
-              </li>
-              <li className="list-none ">
-                <Link
-                  to="/"
-                  className="w-[35px] h-[35px] rounded-full border border-[rgba(0,0,0,0.1)] flex items-center justify-center group hover:bg-[#ff5252] transition-all"
-                >
-                  <FaTiktok className="text-[21px] text-[#595f6a] group-hover:text-white" />
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-         
-        </div>
+     
     </footer>
   );
 };

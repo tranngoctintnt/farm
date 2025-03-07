@@ -20,11 +20,11 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <div className={`w-full fixed py-4 flex transition-all z-50 duration-1000 ${
-        isScrolled ? "bg-[#FFA500] items-center top-0 left-0 justify-center gap-5 rounded-[40px]" : "bg-[#FFA500] items-center justify-center gap-5"} `}>
+        isScrolled ? "bg-[#FFA500] items-center top-0 left-0 justify-center gap-5 rounded-b-[40px]" : "bg-[#FFA500] items-center justify-center gap-5"} `}>
           <ul className="flex items-center gap-5 nav">
             <li className="list-none relative">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   Sản Phẩm
                 </Button>
               </Link>
@@ -86,35 +86,35 @@ const Navigation = () => {
             </li>
             <li className="list-none">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   Special
                 </Button>
               </Link>
             </li>
             <li className="list-none">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   About
                 </Button>
               </Link>
             </li>
             <li className="list-none">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   Tham Quan
                 </Button>
               </Link>
             </li>
             <li className="list-none">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   Blog
                 </Button>
               </Link>
             </li>
             <li className="list-none">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   Đối Tác
                 </Button>
               </Link>
@@ -122,7 +122,7 @@ const Navigation = () => {
 
             <li className="list-none">
               <Link to="/" className="link transition">
-                <Button className="link transition !text-[18px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
+                <Button className="link transition 2xl:!text-[18px] lg:!text-[16px] !text-[#fff] hover:!text-[#d84b4b] !py-[8px] !px-[26px]">
                   Contact
                 </Button>
               </Link>

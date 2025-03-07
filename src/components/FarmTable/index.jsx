@@ -38,7 +38,7 @@ const FarmTable = () => {
             </Button>
           </Link>
         </div>
-        <div className="col2 absolute right-0 w-[60%]">
+        <div className="col2 absolute right-0 top-[18%] w-[60%]">
           <img src="/thit-ham.png" alt="thit ham sung my" />
         </div>
 

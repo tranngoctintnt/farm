@@ -13,7 +13,7 @@ const BlogItem = () => {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
   };
   return (
-    <div className=" w-[70%] m-auto mt-[20px] flex">
+    <div className="container m-auto mt-[20px] flex">
       <Swiper
       modules={[Navigation, Pagination]}
       spaceBetween={20}
