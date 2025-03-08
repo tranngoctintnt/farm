@@ -21,49 +21,49 @@ import Header from "../../components/Header";
 const Home = () => {
   return (
     <>
-    {/* <Header/> */}
+      {/* <Header/> */}
       <HomeBanner />
 
-      <section className="py-9 h-[624px]">
-        <div className="my-job ">
-          <div className="title-myjob flex justify-center">
-            <h2 className="mt-[69px] text-[49px] text-[#998675] font-americana">
+      <section className="py-9 lg:py-0">
+        <div className="my-job relative">
+          <div className="title-myjob flex items-center justify-center">
+            <h2 className="lg:mt-[2.313rem] md:mt-[3rem] lg:text-[3.063rem] md:text-[2rem] text-[#998675] font-americana">
               “NGHỀ CHÚNG TÔI...
             </h2>
           </div>
 
-          <div className="content-myjob flex">
-            <div className="col-1 !w-[33.333%] relative">
+          <div className="content-myjob 2xl:pb-[3rem] lg:pb-0 flex ">
+            <div className="col-1 !w-[33.333%] ">
               <img
-                className="absolute left-0"
+                className=" 2xl:w-[36.875rem] lg:w-[22rem] md:w-[14rem] absolute left-0 2xl:top-[10%] lg:top-[34%]  lg:bottom-0"
                 src="/thuhoach.png"
                 alt="thu-hoach-nho"
               />
             </div>
-            <div className="col-2 !w-[33.333%] mt-[20px] ml-[30px]">
+            <div className="col-2 !w-[33.333%] mt-[1.25rem] ml-[1.875rem]">
               <div className="description-myjob">
-                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem]">
                   Gieo trồng không chỉ là cây trái, mà là niềm tin vào đất mẹ và
                   thực phẩm sạch.
                 </p>
-                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Mỗi hạt giống nảy mầm là một cam kết, mỗi mùa vụ là một hành
                   trình trao đi sự tươi lành.
                 </p>
 
-                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Trồng bằng tình yêu, chăm bằng sự tận tâm, để mỗi bữa ăn không
                   chỉ ngon mà còn trọn vẹn thiên nhiên.
                 </p>
 
-                <p className="text-[22px] text-[#6B693B] mt-[38px]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Gieo mầm hôm nay, gặt hái sức khỏe mai sau!”
                 </p>
               </div>
             </div>
-            <div className="col-3 !w-[33.333%] relative">
+            <div className="col-3 !w-[33.333%] ">
               <img
-                className="absolute right-0 top-[24%]"
+                className="absolute 2xl:w-[28rem] lg:w-[16rem] md:w-[13rem] right-0 top-[42%]"
                 src="/thuhoachsung.png"
                 alt="thu-hoach-sung"
               />
@@ -74,57 +74,59 @@ const Home = () => {
 
       <HomeCatSlier />
 
-      <section className="pb-[168px] bg-white">
-        <div className="deal relative">
+      <section className=" bg-white">
+        <div className="deal pb-[10.5rem] relative">
           <div className="content-deal flex flex-col items-center justify-between">
-            <h2 className="text-[49px] text-[#998675]">Deal “hời” hôm nay</h2>
-            <h2 className="mr-[450px] mt-[65px] text-[#534741] text-[49px] uppercase font-americana">
+            <h2 className="text-[3.063rem] text-[#998675]">
+              Deal “hời” hôm nay
+            </h2>
+            <h2 className="mr-[28.125rem] mt-[4.063rem] text-[#534741] text-[3.063rem] uppercase font-americana">
               ƯU ĐÃI GIÁ
             </h2>
             <div className="info flex items-center justify-center">
-              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">
+              <h1 className="head-sung text-[6.25rem] font-salute uppercase text-[#A94927]">
                 SUNG{" "}
               </h1>
               <img className="" src="/sung-other.png" alt="" />
-              <h1 className="head-sung text-[100px] font-salute uppercase text-[#A94927]">
+              <h1 className="head-sung text-[6.25rem] font-salute uppercase text-[#A94927]">
                 MỸ{" "}
               </h1>
             </div>
-            <h1 className="discout text-[90px] ml-[425px] font-americana text-[#534741s]">
+            <h1 className="discout text-[5.625rem] ml-[26.563rem] font-americana text-[#534741s]">
               50%
             </h1>
 
-            <div className="mt-[50px] flex items-center gap-8">
+            <div className="mt-[3.125rem] flex items-center gap-8">
               <Link className="transition" to="/">
-                <Button className="!bg-[#D86500] !w-[156px] !text-white !px-[25px] !py-[8px] !rounded-[20px]">
+                <Button className="!bg-[#D86500] !w-[9.75rem] !text-white !px-[1.563rem] !py-[0.5rem] !rounded-[1.25rem]">
                   MUA NGAY
                 </Button>
               </Link>
 
               <Link className="transition" to="/">
-                <Button className="!text-[#D86500] !w-[156px] !rounded-[20px] !border !border-solid">
+                <Button className="!text-[#D86500] !w-[9.75rem] !rounded-[1.25rem] !border !border-solid">
                   ƯU ĐÃI
                 </Button>
               </Link>
 
               <Link className="transition" to="/">
-                <Button className="!text-[#D86500] !w-[156px] !rounded-[20px] !border !border-solid">
+                <Button className="!text-[#D86500] !w-[9.75rem] !rounded-[1.25rem] !border !border-solid">
                   SPECIAL
                 </Button>
               </Link>
             </div>
           </div>
 
-          <div className="img-deal absolute left-0 w-[500px] top-[52%]">
+          <div className="img-deal absolute left-0 2xl:w-[31.25rem] lg:w-[24.188rem] top-[52%]">
             <img src="/deal-sung.png" alt="deal" />
           </div>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="2xl:py-16 lg:pt-4">
         <div className="product-list container flex flex-col items-center gap-6">
           <div className="title-product flex items-center justify-center">
-            <h2 className="text-[40px] uppercase text-[#6B693B] font-americana">
+            <h2 className="2xl:text-[2.5rem] lg:text-[1.8rem] uppercase text-[#6B693B] font-americana">
               Sạch ngon chuẩn gu - Mua ngay chẳng ngại
             </h2>
           </div>
@@ -139,54 +141,56 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-8 mt-[150px]">
-        <div className="info-stf h-[1100px] relative">
+      <section
+        className="py-8 mt-[1.375rem]"
+      >
+        <div className="info-stf 2xl:h-[68.75rem] lg:h-[37.75rem] relative">
           <div className="container">
-            <div className="!w-[50%] content-stf ml-[350px] flex flex-col items-start bg-info">
-              <h3 className="uppercase mt-[20px] text-[34px] text-[#9DC76F]">
+            <div className="2xl:!w-[50%] 2xl:pt-0 lg:pt-[2.5rem] lg:!w-[79%] content-stf 2xl:ml-[21.875rem] lg:ml-[0] flex flex-col items-start bg-info">
+              <h3 className="uppercase mt-[1.25rem] 2xl:text-[2.125rem] lg:text-[1.163rem] text-[#9DC76F]">
                 Nông trại xanh
               </h3>
-              <h2 className="title-info uppercase text-[66px] text-white">
+              <h2 className="title-info uppercase 2xl:text-[4.125rem] lg:text-[2rem] text-white">
                 Suối Tiên Farm
               </h2>
-              <h3 className="uppercase text-[34px] text-[#9DC76F]">
+              <h3 className="uppercase 2xl:text-[2.125rem] lg:text-[1.163rem] text-[#9DC76F]">
                 Giữa lòng huyền thoại Suối Tiên
               </h3>
 
-              <p className="text-[21px] text-white">
+              <p className="2xl:text-[1.313rem] lg:text-[1rem] text-white">
                 Nông trại giữa công viên giải trí? Nghe lạ nhưng Suối Tiên Farm
                 chính là điểm chạm giữa thiên nhiên thuần khiết và trải nghiệm
                 độc đáo!
               </p>
 
-              <p className="text-[21px] text-white mt-[20px]">
-                Suối Tiên Farm là một phần của hành trình Suối Tiên <br /> hướng
-                đến du lịch bền vững – gìn giữ bản sắc, <br /> nhưng vẫn chất và
+              <p className="2xl:text-[1.313rem] lg:text-[1rem] text-white 2xl:mt-[1.25rem] lg:mt-[0.5rem]">
+                Suối Tiên Farm là một phần của hành trình Suối Tiên hướng
+                đến du lịch bền vững – gìn giữ bản sắc, nhưng vẫn chất và
                 khác biệt!
               </p>
 
-              <p className="text-[50px] text-white mt-[20px]">01</p>
-              <p className="text-[21px] text-white">Nông nghiệp kiểu mới</p>
+              <p className="2xl:text-[3.125rem] lg:text-[1.488rem] text-white 2xl:mt-[1.25rem] lg:mt-[0.5rem]">01</p>
+              <p className="text-[0.9rem] text-white">Nông nghiệp kiểu mới</p>
 
-              <p className="text-[50px] text-white mt-[20px]">02</p>
-              <p className="text-[21px] text-white">
+              <p className="2xl:text-[3.125rem] lg:text-[1.488rem] text-white 2xl:mt-[1.25rem] lg:mt-[0.5rem]">02</p>
+              <p className="text-[0.9rem] text-white">
                 Ăn lành - Chill chất - Detox cơ thể
               </p>
 
-              <p className="text-[50px] text-white mt-[20px]">03</p>
-              <p className="text-[21px] text-white">
+              <p className="2xl:text-[3.125rem] lg:text-[1.488rem] text-white 2xl:mt-[1.25rem] lg:mt-[0.5rem]">03</p>
+              <p className="text-[0.9rem] text-white">
                 Check-in xanh giữa thế giới huyền thoại
               </p>
 
-              <Link className="transition mt-[68px]" to="/">
-                <Button className="!text-[22px] uppercase !rounded-[30px] !bg-[#9DC76F] !py-2 !px-8 !text-white">
+              <Link className="transition 2xl:mt-[6.6rem] lg:mt-[2.6rem]" to="/">
+                <Button className="!text-[1.375rem] uppercase !rounded-[1.875rem] !bg-[#9DC76F] !py-2 !px-8 !text-white">
                   Xem Thêm
                 </Button>
               </Link>
             </div>
 
             <div className="img-info absolute top-[-39%] right-0">
-              <img src="/img-info.png" alt="bg nho" />
+              <img className="2xl:w-full lg:w-[12rem]" src="/img-info.png" alt="bg nho" />
             </div>
           </div>
         </div>
@@ -196,13 +200,13 @@ const Home = () => {
         <div className="frui flex items-center relative justify-center">
           <div className="col w-[25%]">
             <img
-              className="absolute top-[-11%] w-[380px] left-0"
+              className="absolute top-[-11%] 2xl:w-[23.75rem] lg:w-[12.75rem] left-0"
               src="/bg-luu.png"
               alt="bg luu"
             />
           </div>
           <div className="col w-[50%]">
-            <h2 className="title-frui uppercase text-[64px] pb-10 text-[#6B693B] font-americana">
+            <h2 className="title-frui uppercase 2xl:text-[4rem] lg:text-[2.5rem] 2xl:pb-10 lg:pb-[1rem] text-[#6B693B] font-americana">
               Các loại trái
             </h2>
 
@@ -210,19 +214,19 @@ const Home = () => {
             <BannerBoxV2 image={"/sung1_1.png"} />
             <BannerBoxV2 image={"/hong-socola.png"} />
 
-            <div className="frui-button flex mt-[60px] items-center justify-center gap-6">
+            <div className="frui-button flex mt-[3.75rem] items-center justify-center gap-6">
               <Link className="transition" to="/">
-                <Button className="uppercase !px-8 !w-[156px] !rounded-[20px] !bg-[#6B693B] !text-white">
+                <Button className="uppercase !px-8 !w-[9.75rem] !rounded-[1.25rem] !bg-[#6B693B] !text-white">
                   Mua ngay
                 </Button>
               </Link>
               <Link className="transition" to="/">
-                <Button className="uppercase !px-8 !w-[156px] !border !border-solid !border-[#6B693B] !rounded-[20px] !text-[#6B693B]">
+                <Button className="uppercase !px-8 !w-[9.75rem] !border !border-solid !border-[#6B693B] !rounded-[1.25rem] !text-[#6B693B]">
                   Menu
                 </Button>
               </Link>
               <Link className="transition" to="/">
-                <Button className="uppercase !px-8 !w-[156px] !border !border-solid !border-[#6B693B] !rounded-[20px] !text-[#6B693B]">
+                <Button className="uppercase !px-8 !w-[9.75rem] !border !border-solid !border-[#6B693B] !rounded-[1.25rem] !text-[#6B693B]">
                   Tìm hiểu
                 </Button>
               </Link>
@@ -230,7 +234,7 @@ const Home = () => {
           </div>
           <div className="col w-[25%]">
             <img
-              className="absolute right-0 w-[380px]"
+              className="absolute right-0 2xl:w-[23.75rem] lg:w-[15.375rem]"
               src="/bg-sung.png"
               alt="bg sung"
             />
@@ -242,35 +246,33 @@ const Home = () => {
 
       {/* <AdsBannerSlider items={3}/> */}
 
-      <section className="py-[40px] khonggian ">
-        <div className="bg-kgian relative flex flex-col pb-[300px]">
-          <h2 className="uppercase text-center text-[50px] text-[#6B693B] font-americana">
+      <section className="py-[2.5rem] khonggian ">
+        <div className="bg-kgian relative flex flex-col 2xl:pb-[18.75rem] lg:pb-[11.75rem]">
+          <h2 className="uppercase text-center 2xl:text-[3.125rem] lg:text-[2rem] text-[#6B693B] font-americana">
             Dạo quanh <br /> không gian xanh mát
           </h2>
           <img src="/bg-khonggianxanh.png" alt="khong gian xanh" />
-          <div className="mt-[40px] w-full top-[33%] absolute feed-list">
+          <div className="2xl:mt-[2.5rem] lg:mt-0 w-full top-[33%] absolute feed-list">
             <FeedFarm items={3} />
           </div>
         </div>
-     
-
       </section>
-      <div className="m-auto flex flex-col gap-8 relative pb-[100px]">
-          <div className="mt-[40px] container flex justify-center gap-10">
-            <div className="fist-blog w-[60%]">
-              <FirstBlog />
-            </div>
-
-            <div className="fist-blog w-[40%]">
-              <SecBlog />
-            </div>
+      <div className="m-auto flex flex-col 2xl:pt-[3.5rem] lg:pt-0 2xl:gap-8 lg:gap-4 relative 2xl:pb-[6.25rem] lg:pb-[2.375rem]">
+        <div className="mt-[2.5rem]] container flex justify-center gap-10">
+          <div className="fist-blog w-[60%]">
+            <FirstBlog />
           </div>
-          <BlogItem />
-          <div className="w-[420px] absolute top-[65%] opacity-50">
-            <img src="/khonggianxanh.png" alt="khong gian xanh" />
+
+          <div className="fist-blog w-[40%]">
+            <SecBlog />
           </div>
         </div>
-      <Footer/>
+        <BlogItem />
+        <div className="2xl:w-[26.25rem] lg:w-[16.25rem] absolute 2xl:top-[65%] lg:top-[69%] opacity-50">
+          <img src="/khonggianxanh.png" alt="khong gian xanh" />
+        </div>
+      </div>
+      <Footer />
 
       {/* <HomeCatSlier />
 

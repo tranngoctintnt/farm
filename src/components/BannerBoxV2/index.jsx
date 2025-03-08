@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const BannerBoxV2 = (props) => {
   return (
-    <div className="bannerBoxV2 w-full overflow-hidden flex rounded-md group relative">
-      <div className="img-list">
+    <div className="bannerBoxV2 w-full 2xl:h-[13.125rem] lg:h-[9.375rem] overflow-hidden flex items-center rounded-md group relative">
+      <div className="img-list ">
       <img
         src={props.image}
         alt=""
@@ -17,12 +17,12 @@ const BannerBoxV2 = (props) => {
       <div
         className='info-frui flex flex-col pl-8 justify-center gap-4'
       >
-        <h2 className="text-[35px] text-[#6B693B] uppercase">Nho Mẫu Đơn</h2>
-        <span className="text-[20px] text-[#6B693B] w-full">
+        <h2 className="2xl:text-[2.188rem] text-[#6B693B] uppercase">Nho Mẫu Đơn</h2>
+        <span className="2xl:text-[1.25rem] text-[#6B693B] w-full">
         Ngọt thanh, căng mọng, thơm như chạm vào mùa hè! Bạn đã thử chưa?
         </span>
         <div className="w-full">
-          <Link className="text-[16px] transition text-[#736357] uppercase pr-8 font-[600] link" to="/">
+          <Link className="2xl:text-[1rem] transition text-[#736357] uppercase pr-8 font-[600] link" to="/">
             Khám phá ngay!
           </Link>
         </div>

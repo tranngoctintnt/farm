@@ -7,7 +7,7 @@ import ProductItems from "../ProductItems";
 
 const ProductSlider = () => {
   return (
-    <section className="productSlider flex items-center justify-around py-10 gap-10">
+    <section className="productSlider flex items-center justify-around py-10 2xl:gap-10 lg:gap-4">
       
             <ProductItems/>
 

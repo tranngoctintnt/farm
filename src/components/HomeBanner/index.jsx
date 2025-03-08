@@ -5,32 +5,32 @@ import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
-    <div className="homeBanner relative flex flex-col pb-[16rem]">
+    <div className="homeBanner relative flex flex-col 2xl:pb-[16rem] lg:pb-[5rem]">
       <div className="backgroundBanner bg-[#FFA500] h-[31.875rem] max-h-[31.875rem]">
         <div className="content-Banner flex flex-col relative justify-start">
-          <h2 className="text-[64px] 2xl:ml-72 lg:ml-[6.25rem] text-[#fff] mt-[5.688rem] !font-americana">
+          <h2 className="lg:text-[4rem] 2xl:ml-72 md:text-[2rem] md:ml-[6.25rem] text-[#fff] mt-[5.688rem] !font-americana">
             SUỐI TIÊN FARM
           </h2>
             <div className="!bg-[#f5deb3] h-[5.6rem] opacity-30"></div>
            
-          <h4 className="absolute !top-[52%] 2xl:left-[15%] lg:left-[10%] text-[1.875rem] text-[#fff]">
+          <h4 className="absolute lg:!top-[52%] md:!top-[49%] 2xl:left-[15%] md:left-[10%] lg:text-[1.875rem] md:text-[1.3rem] text-[#fff]">
               Nông trại 4.0 - Vừa chill, vừa chất
             </h4>
-          <div className="2xl:ml-72 lg:ml-[6.25rem] pt-[5.125rem] button-banner">
+          <div className="2xl:ml-72 md:ml-[6.25rem] lg:pt-[5.125rem] md:pt-[3rem] button-banner">
             <Link to="/">
-              <Button className="!bg-[#D86500] !text-[16px] !py-2 !px-9 !rounded-[20px] !text-white">ĐẶT HÀNG</Button>
+              <Button className="!bg-[#D86500] lg:!text-[1rem] md:!text-[0.8rem] lg:!py-2 !px-7 !rounded-[1.25rem] !text-white">ĐẶT HÀNG</Button>
             </Link>
 
             <Link to="/">
-              <Button className="!ml-5 !text-[16px] !py-2 !px-6 !rounded-[20px] !border-solid !border-[1px] !text-white">TÌM HIỂU THÊM</Button>
+              <Button className="!ml-5 lg:!text-[1rem] md:!text-[0.8rem] lg:!py-2 lg:!px-6 md:!px-2 !rounded-[1.25rem] !border-solid !border-[1px] !text-white">TÌM HIỂU THÊM</Button>
             </Link>
           </div>
         </div>
 
       </div>
 
-        <div className="absolute top-[23%] right-[10%]">
-          <img src="./Asset1.png" alt="gio-oi" className=""/>
+        <div className="absolute 2xl:top-[23%] 2xl:right-[10%] md:top-[29%] md:right-[3%]">
+          <img src="./Asset1.png" alt="gio-oi" className="2xl:w-full md:w-[27rem]"/>
         </div>
 
     </div>

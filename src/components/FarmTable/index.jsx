@@ -5,14 +5,14 @@ import { Button } from "@mui/material";
 
 const FarmTable = () => {
   return (
-    <div className="farm-table py-[4rem] relative">
-      <div className="content-table h-[800px] flex">
+    <div className="farm-table 2xl:py-[4rem] lg:py-[1rem] relative">
+      <div className="content-table 2xl:h-[50rem] lg:h-[37rem] flex">
         <div className="col1 absolute right-[45%] flex flex-col items-start w-[35%] gap-6">
-          <h2 className="uppercase text-[64px] text-[#6B693B]">
+          <h2 className="uppercase 2xl:text-[4rem] lg:text-[2.5rem] text-[#6B693B]">
             Farm to table
           </h2>
 
-          <p className="text-[22px] text-[#6B693B] mt-[25px] text-justify">
+          <p className="2xl:text-[1.375rem] lg:text-[0.9rem] text-[#6B693B] 2xl:mt-[1.563rem] lg:mt-[0.6rem] text-justify">
             Farm to Table tại Suối Tiên Farm không chỉ là một cách thưởng thức
             thực phẩm, mà còn là hành trình kết nối bạn với thiên nhiên. Mọi thứ
             đều bắt đầu từ những khu vườn xanh mát, nơi rau củ và trái cây được
@@ -20,20 +20,20 @@ const FarmTable = () => {
             qua bất kỳ khâu trung gian nào.
           </p>
 
-          <p className="text-[22px] text-[#6B693B] mt-[25px] text-justify">
+          <p className="2xl:text-[1.375rem] lg:text-[0.9rem] text-[#6B693B] 2xl:mt-[1.563rem] lg:mt-[0.6rem] text-justify">
             Hãy tự tay hái những loại trái cây tươi ngon, cảm nhận vị ngọt
             nguyên bản từ đất mẹ, và thưởng thức món ăn chế biến ngay tại nông
             trại. Đây không chỉ là một bữa ăn, mà là một lối sống – sạch hơn,
             lành mạnh hơn và bền vững hơn.
           </p>
 
-          <p className="text-[22px] text-[#6B693B] mt-[25px] text-justify">
+          <p className="2xl:text-[1.375rem] lg:text-[0.9rem] text-[#6B693B] 2xl:mt-[1.563rem] lg:mt-[0.6rem] text-justify">
             Từ nông trại đến bàn ăn – mỗi món ăn đều là sự kết tinh của thiên
             nhiên và sự tận tâm. Bạn đã sẵn sàng trải nghiệm chưa?
           </p>
 
-          <Link className="transition mt-[50px]" to="/">
-            <Button className="uppercase !text-white !w-[156px] !rounded-[30px] !bg-[#6B693B]">
+          <Link className="transition mt-[3.125rem]" to="/">
+            <Button className="uppercase !text-white !w-[9.75rem] !rounded-[1.875rem] !bg-[#6B693B]">
               Đọc Thêm
             </Button>
           </Link>
@@ -43,7 +43,7 @@ const FarmTable = () => {
         </div>
 
         <div className="img-farmtb ">
-        <img className="w-[268px] absolute left-0 top-[44%]" src="/farm-tb.png" alt="farm-table" />
+        <img className="2xl:w-[16.75rem] lg:w-[11.75rem] absolute left-0 2xl:top-[44%] lg:top-[25%]" src="/farm-tb.png" alt="farm-table" />
       </div>
       </div>
      

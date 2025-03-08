@@ -13,11 +13,11 @@ import { Button } from "@mui/material";
 
 const Footer = () => {
   return (
-    <footer className="pt-6 relative h-[700px]">
-      <div className="container absolute left-[15%] top-[19%] flex flex-col items-center justify-center">
-        <img className="w-[200px] h-[200px] m-w-[200px]" src="/logo-stf.png" alt="logo footer" />
+    <footer className="pt-6 relative lg:bg-contain 2xl:h-[43.75rem] lg:h-[28rem]">
+      <div className="container absolute left-[15%] 2xl:top-[19%] lg:top-[12%] lg:left-[10%] flex flex-col items-center justify-center">
+        <img className="2xl:w-[12.5rem] 2xl:h-[12.5rem] 2xl:m-w-[12.5rem] lg:w-[9.5rem] lg:h-[9.5rem] lg:m-w-[9.5rem]" src="/logo-stf.png" alt="logo footer" />
 
-        <div className="social flex gap-8">
+        <div className="social flex gap-8 2xl:w-full lg:w-[188px]">
           <Link className="transition" to='/'>
             <img src="/fb.png" alt="facebook" />
           </Link>
@@ -33,7 +33,7 @@ const Footer = () => {
           
         </div>
 
-        <div className="location flex items-center gap-6 py-[30px]">
+        <div className="location flex items-center gap-6 2xl:py-[1.875rem] lg:py-[0.875rem]">
             <img src="/location.png" alt="location" />
             <span className="text-[#6B693B]">
             120 Xa Lộ Hà Nội, P. Tân Phú, TP. Thủ Đức, TP.HCM
@@ -52,7 +52,7 @@ const Footer = () => {
             </span>
         </div>
 
-        <div className="footer-contact flex items-center gap-6 py-[20px]">
+        <div className="footer-contact flex items-center gap-6 py-[1.25rem]">
             <img src="/qa.png" alt="location" />
             <span className="text-[#6B693B]">
            Câu hỏi thường gặp (FAQ)

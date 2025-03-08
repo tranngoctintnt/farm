@@ -13,7 +13,7 @@ const BlogItem = () => {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
   };
   return (
-    <div className="container m-auto mt-[20px] flex">
+    <div className="container m-auto mt-[1.25rem] flex">
       <Swiper
       modules={[Navigation, Pagination]}
       spaceBetween={20}
@@ -42,20 +42,20 @@ const BlogItem = () => {
               {/* </div> */}
 
               <div className="infoBlog py-4">
-                <h2 className="text-[16px] font-[600] text-black mb-2">
+                <h2 className="text-[1rem] font-[600] text-black mb-2">
                   <Link to="/" className="link transition-all">
                     {truncateText('Nho Mẫu Đơn Suối Tiên – Ngọt Như Crush, Chất Như Người Yêu Cũ!')}
                   
                   </Link>
                 </h2>
 
-                <p className="text-[13px] font-[400] text-[rgba(0,0,0,0.8)] mb-4">
+                <p className="text-[0.8rem] font-[400] text-[rgba(0,0,0,0.8)] mb-4">
                 {truncateText('Thử làm nông dân, tự tay hái quả, tận hưởng không gian trong lành – một ngày chill đúng nghĩa!')}
                 </p>
 
                 <Link
                   to="/"
-                  className="link transition-all font-[600] text-[15px] flex items-center"
+                  className="link transition-all font-[600] text-[0.8rem] flex items-center"
                 >
                   Read more <IoIosArrowForward />
                 </Link>
@@ -79,21 +79,21 @@ const BlogItem = () => {
               {/* </div> */}
 
               <div className="infoBlog py-4">
-                <h2 className="text-[16px] font-[600] text-black mb-2">
+                <h2 className="text-[1rem] font-[600] text-black mb-2">
                   <Link to="/" className="link transition-all">
                     
                   {truncateText('Sung Mỹ –  Vì Sao Được Giới Sành Ăn Yêu Thích?')}
                   </Link>
                 </h2>
 
-                <p className="text-[13px] font-[400] text-[rgba(0,0,0,0.8)] mb-4">
+                <p className="text-[0.8rem] font-[400] text-[rgba(0,0,0,0.8)] mb-4">
                 {truncateText('Giống sung siêu phẩm, ngọt thanh, giàu dinh dưỡng – khám phá hành trình từ farm đến bàn ăn!')}
 
                 </p>
 
                 <Link
                   to="/"
-                  className="link transition-all font-[600] text-[15px] flex items-center"
+                  className="link transition-all font-[600] text-[0.8rem] flex items-center"
                 >
                   Read more <IoIosArrowForward />
                 </Link>
@@ -117,21 +117,21 @@ const BlogItem = () => {
               {/* </div> */}
 
               <div className="infoBlog py-4">
-                <h2 className="text-[16px] font-[600] text-black mb-2">
+                <h2 className="text-[1rem] font-[600] text-black mb-2">
                   <Link to="/" className="link transition-all">
                     
                     {truncateText('A Nông Trại 4.0 – Hành Trình Từ Hạt Giống Đến Bàn Ăn!')}
                   </Link>
                 </h2>
 
-                <p className="text-[13px] font-[400] text-[rgba(0,0,0,0.8)] mb-4">
+                <p className="text-[0.8rem] font-[400] text-[rgba(0,0,0,0.8)] mb-4">
                 {truncateText('Từ công nghệ xanh đến những bữa ăn lành mạnh – Suối Tiên Farm biến thực phẩm sạch thành phong cách sống!')}
 
                 </p>
 
                 <Link
                   to="/"
-                  className="link transition-all font-[600] text-[15px] flex items-center"
+                  className="link transition-all font-[600] text-[0.8rem] flex items-center"
                 >
                   Read more <IoIosArrowForward />
                 </Link>
