@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
-    <div className="homeBanner relative flex flex-col 2xl:pb-[16rem] lg:pb-[5rem]">
-      <div className="backgroundBanner bg-[#FFA500] h-[31.875rem] max-h-[31.875rem]">
+    <div className="homeBanner relative flex flex-col 2xl:pb-[16rem] lg:pb-[3rem]">
+      <div className="backgroundBanner bg-[#FFA500] lg:h-[31.875rem] md:h-[25.875rem] max-h-[31.875rem]">
         <div className="content-Banner flex flex-col relative justify-start">
           <h2 className="lg:text-[4rem] 2xl:ml-72 md:text-[2rem] md:ml-[6.25rem] text-[#fff] mt-[5.688rem] !font-americana">
             SUỐI TIÊN FARM
@@ -29,8 +29,8 @@ const HomeBanner = () => {
 
       </div>
 
-        <div className="absolute 2xl:top-[23%] 2xl:right-[10%] md:top-[29%] md:right-[3%]">
-          <img src="./Asset1.png" alt="gio-oi" className="2xl:w-full md:w-[27rem]"/>
+        <div className="absolute 2xl:top-[23%] 2xl:right-[10%] md:top-[39%] md:right-[3%]">
+          <img src="./Asset1.png" alt="gio-oi" className="2xl:w-full md:w-[21rem]"/>
         </div>
 
     </div>

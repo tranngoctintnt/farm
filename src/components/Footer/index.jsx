@@ -13,11 +13,11 @@ import { Button } from "@mui/material";
 
 const Footer = () => {
   return (
-    <footer className="pt-6 relative lg:bg-contain 2xl:h-[43.75rem] lg:h-[28rem]">
+    <footer className="pt-6 relative lg:bg-cover 2xl:h-[41.75rem] lg:h-[28rem]">
       <div className="container absolute left-[15%] 2xl:top-[19%] lg:top-[12%] lg:left-[10%] flex flex-col items-center justify-center">
         <img className="2xl:w-[12.5rem] 2xl:h-[12.5rem] 2xl:m-w-[12.5rem] lg:w-[9.5rem] lg:h-[9.5rem] lg:m-w-[9.5rem]" src="/logo-stf.png" alt="logo footer" />
 
-        <div className="social flex gap-8 2xl:w-full lg:w-[188px]">
+        <div className="social flex justify-center gap-8 2xl:w-full lg:w-[188px]">
           <Link className="transition" to='/'>
             <img src="/fb.png" alt="facebook" />
           </Link>

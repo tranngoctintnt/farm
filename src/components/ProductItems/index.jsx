@@ -1,11 +1,9 @@
 import React from "react";
 import "../ProductItems/style.css";
 import { Link } from "react-router-dom";
-import Rating from "@mui/material/Rating";
 import { CiHeart } from "react-icons/ci";
 import { MdZoomOutMap } from "react-icons/md";
 import { Button } from "@mui/material";
-import Tooltip from "@mui/material/Tooltip";
 
 const ProductItems = () => {
   const truncateText = (text, maxLength = 50) => {
@@ -13,7 +11,6 @@ const ProductItems = () => {
   };
   return (
     <div className="productItem shadow-lg rounded-lg overflow-hiden border-1 border-[rgb(0,0,0,0.1)]">
-      
       <div className="imgWrapper w-[100%] overflow-hidden rounded-md relative group">
         <Link to="/">
           <div className="img 2xl:h-[21.875rem] lg:h-[15.875rem] flex items-center !overflow-hidden justify-center">
@@ -52,8 +49,10 @@ const ProductItems = () => {
           </Link>
         </h6>
         <h3 className="title text-[0.875rem] mt-3 font-[500] mb-1 text-[#000]">
-        <Link to="/" className="link transition-all">
-           {truncateText('Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s')}
+          <Link to="/" className="link transition-all">
+            {truncateText(
+              "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s"
+            )}
           </Link>
         </h3>
         {/* <Rating
@@ -67,7 +66,9 @@ const ProductItems = () => {
           <span className="old-price line-through text-gray-500 font-[500]">
             200.000
           </span>
-          <span className="old-price text-[#D86500] font-bold">150.000 <span>VND</span></span>
+          <span className="old-price text-[#D86500] font-bold">
+            150.000 <span>VND</span>
+          </span>
         </div>
       </div>
     </div>

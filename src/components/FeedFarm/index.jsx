@@ -11,7 +11,7 @@ const FeedFarm = (props) => {
     <div className="w-full">
       <div className="container flex">
         <Swiper
-          slidesPerView={props.items}
+          // slidesPerView={props.items}
           grid={{
             rows: 2,
             fill:"row",
@@ -25,6 +25,20 @@ const FeedFarm = (props) => {
           
           modules={[Grid, Pagination, Navigation]}
           className="feedSlider"
+          breakpoints={{
+            768: { slidesPerView: 2,
+              rid: {
+                rows: 2,
+            fill:"row",
+              }
+            },
+            1024: { slidesPerView: props.items,
+              grid: {
+                rows: 2,
+            fill:"row",
+              }
+             },
+          }}
         >
           <SwiperSlide>
             <BannerBox img="/feed1.png" />

@@ -16,7 +16,6 @@ import BlogItem from "../../components/BlogItem";
 import FirstBlog from "../../components/FirstBlog";
 import SecBlog from "../../components/SecBlog";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 
 const Home = () => {
   return (
@@ -24,46 +23,46 @@ const Home = () => {
       {/* <Header/> */}
       <HomeBanner />
 
-      <section className="py-9 lg:py-0">
+      <section className="py-9 lg:py-0 lg:pb-[5rem]">
         <div className="my-job relative">
           <div className="title-myjob flex items-center justify-center">
-            <h2 className="lg:mt-[2.313rem] md:mt-[3rem] lg:text-[3.063rem] md:text-[2rem] text-[#998675] font-americana">
+            <h2 className="lg:mt-[0rem] md:mt-[3rem] lg:text-[3.063rem] md:text-[2rem] text-[#998675] font-americana">
               “NGHỀ CHÚNG TÔI...
             </h2>
           </div>
 
           <div className="content-myjob 2xl:pb-[3rem] lg:pb-0 flex ">
-            <div className="col-1 !w-[33.333%] ">
+            <div className="col-1 !w-[30%] ">
               <img
-                className=" 2xl:w-[36.875rem] lg:w-[22rem] md:w-[14rem] absolute left-0 2xl:top-[10%] lg:top-[34%]  lg:bottom-0"
+                className=" 2xl:w-[36.875rem] lg:w-[22rem] md:w-[14rem] absolute left-0 2xl:top-[10%] lg:top-[34%] md:top-[47%] lg:bottom-0"
                 src="/thuhoach.png"
                 alt="thu-hoach-nho"
               />
             </div>
-            <div className="col-2 !w-[33.333%] mt-[1.25rem] ml-[1.875rem]">
+            <div className="col-2 !w-[40%] lg:mt-[1.25rem] lg:ml-[1.875rem] md:m-0">
               <div className="description-myjob">
-                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem]">
                   Gieo trồng không chỉ là cây trái, mà là niềm tin vào đất mẹ và
                   thực phẩm sạch.
                 </p>
-                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Mỗi hạt giống nảy mầm là một cam kết, mỗi mùa vụ là một hành
                   trình trao đi sự tươi lành.
                 </p>
 
-                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Trồng bằng tình yêu, chăm bằng sự tận tâm, để mỗi bữa ăn không
                   chỉ ngon mà còn trọn vẹn thiên nhiên.
                 </p>
 
-                <p className="2xl:text-[1.2rem] lg:text-[1rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
+                <p className="2xl:text-[1.2rem] lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Gieo mầm hôm nay, gặt hái sức khỏe mai sau!”
                 </p>
               </div>
             </div>
-            <div className="col-3 !w-[33.333%] ">
+            <div className="col-3 !w-[30%] ">
               <img
-                className="absolute 2xl:w-[28rem] lg:w-[16rem] md:w-[13rem] right-0 top-[42%]"
+                className="absolute 2xl:w-[28rem] lg:w-[16rem] md:w-[13rem] right-0 lg:top-[42%] md:top-[47%]"
                 src="/thuhoachsung.png"
                 alt="thu-hoach-sung"
               />
@@ -75,49 +74,49 @@ const Home = () => {
       <HomeCatSlier />
 
       <section className=" bg-white">
-        <div className="deal pb-[10.5rem] relative">
+        <div className="deal lg:pb-[10.5rem] md:pb-[3rem] lg:pt-0 md:pt-[2rem] relative">
           <div className="content-deal flex flex-col items-center justify-between">
-            <h2 className="text-[3.063rem] text-[#998675]">
+            <h2 className="2xl:text-[3.063rem] lg:text-[2.5rem] md:text-[2.063rem] text-[#998675]">
               Deal “hời” hôm nay
             </h2>
-            <h2 className="mr-[28.125rem] mt-[4.063rem] text-[#534741] text-[3.063rem] uppercase font-americana">
+            <h2 className="lg:mr-[28.125rem] md:mr-[20rem] 2xl:mt-[4.063rem] lg:mt-[2rem] md:text-[1.663rem] text-[#534741] 2xl:text-[3.063rem] lg:text-[2.5rem] uppercase font-americana">
               ƯU ĐÃI GIÁ
             </h2>
             <div className="info flex items-center justify-center">
-              <h1 className="head-sung text-[6.25rem] font-salute uppercase text-[#A94927]">
-                SUNG{" "}
+              <h1 className="head-sung 2xl:text-[6.25rem] lg:text-[5rem] md:text-[3.263rem] font-salute uppercase text-[#A94927]">
+                SUNG
               </h1>
-              <img className="" src="/sung-other.png" alt="" />
-              <h1 className="head-sung text-[6.25rem] font-salute uppercase text-[#A94927]">
-                MỸ{" "}
+              <img className="lg:w-full md:w-[5.125rem]" src="/sung-other.png" alt="" />
+              <h1 className="head-sung 2xl:text-[6.25rem] lg:text-[5rem] md:text-[3.263rem] font-salute uppercase text-[#A94927]">
+                MỸ
               </h1>
             </div>
-            <h1 className="discout text-[5.625rem] ml-[26.563rem] font-americana text-[#534741s]">
+            <h1 className="discout 2xl:text-[5.625rem] lg:text-[4rem] md:text-[3rem] lg:ml-[26.563rem] md:ml-[13rem] font-americana text-[#534741]">
               50%
             </h1>
 
-            <div className="mt-[3.125rem] flex items-center gap-8">
+            <div className="2xl:mt-[3.125rem] lg:mt[2.5rem] flex items-center gap-8">
               <Link className="transition" to="/">
-                <Button className="!bg-[#D86500] !w-[9.75rem] !text-white !px-[1.563rem] !py-[0.5rem] !rounded-[1.25rem]">
+                <Button className="!bg-[#D86500] lg:!w-[9.75rem] md:w-[6rem] !text-white lg!px-[1.563rem] lg!py-[0.5rem] !rounded-[1.25rem]">
                   MUA NGAY
                 </Button>
               </Link>
 
               <Link className="transition" to="/">
-                <Button className="!text-[#D86500] !w-[9.75rem] !rounded-[1.25rem] !border !border-solid">
+                <Button className="!text-[#D86500] lg:!w-[9.75rem] md:w-[6rem] !rounded-[1.25rem] !border !border-solid">
                   ƯU ĐÃI
                 </Button>
               </Link>
 
               <Link className="transition" to="/">
-                <Button className="!text-[#D86500] !w-[9.75rem] !rounded-[1.25rem] !border !border-solid">
+                <Button className="!text-[#D86500] lg:!w-[9.75rem] md:w-[6rem] !rounded-[1.25rem] !border !border-solid">
                   SPECIAL
                 </Button>
               </Link>
             </div>
           </div>
 
-          <div className="img-deal absolute left-0 2xl:w-[31.25rem] lg:w-[24.188rem] top-[52%]">
+          <div className="img-deal absolute left-0 2xl:w-[31.25rem] lg:w-[20.188rem] md:w-[12.5rem] lg:top-[52%] md:top-[18%]">
             <img src="/deal-sung.png" alt="deal" />
           </div>
         </div>
@@ -126,7 +125,7 @@ const Home = () => {
       <section className="2xl:py-16 lg:pt-4">
         <div className="product-list container flex flex-col items-center gap-6">
           <div className="title-product flex items-center justify-center">
-            <h2 className="2xl:text-[2.5rem] lg:text-[1.8rem] uppercase text-[#6B693B] font-americana">
+            <h2 className="2xl:text-[2.5rem] lg:text-[1.8rem] md:text-[1.4rem] uppercase text-[#6B693B] font-americana">
               Sạch ngon chuẩn gu - Mua ngay chẳng ngại
             </h2>
           </div>
@@ -190,7 +189,7 @@ const Home = () => {
             </div>
 
             <div className="img-info absolute top-[-39%] right-0">
-              <img className="2xl:w-full lg:w-[12rem]" src="/img-info.png" alt="bg nho" />
+              <img className="2xl:w-full lg:w-[12rem] md:w-[8.563rem]" src="/img-info.png" alt="bg nho" />
             </div>
           </div>
         </div>
@@ -200,13 +199,13 @@ const Home = () => {
         <div className="frui flex items-center relative justify-center">
           <div className="col w-[25%]">
             <img
-              className="absolute top-[-11%] 2xl:w-[23.75rem] lg:w-[12.75rem] left-0"
+              className="absolute top-[-11%] 2xl:w-[23.75rem] lg:w-[12.75rem] md:w-[9.563rem] left-0"
               src="/bg-luu.png"
               alt="bg luu"
             />
           </div>
-          <div className="col w-[50%]">
-            <h2 className="title-frui uppercase 2xl:text-[4rem] lg:text-[2.5rem] 2xl:pb-10 lg:pb-[1rem] text-[#6B693B] font-americana">
+          <div className="col lg:w-[50%] md:w-[70%]">
+            <h2 className="title-frui uppercase 2xl:text-[4rem] lg:text-[2.5rem] md:text-[2rem] 2xl:pb-10 lg:pb-[1rem] text-[#6B693B] font-americana">
               Các loại trái
             </h2>
 
@@ -234,7 +233,7 @@ const Home = () => {
           </div>
           <div className="col w-[25%]">
             <img
-              className="absolute right-0 2xl:w-[23.75rem] lg:w-[15.375rem]"
+              className="absolute right-0 2xl:w-[23.75rem] lg:w-[15.375rem] md:w-[9.563rem]"
               src="/bg-sung.png"
               alt="bg sung"
             />
@@ -246,9 +245,9 @@ const Home = () => {
 
       {/* <AdsBannerSlider items={3}/> */}
 
-      <section className="py-[2.5rem] khonggian ">
+      <section className="lg:py-[2.5rem] md:pb-[15.5rem] khonggian ">
         <div className="bg-kgian relative flex flex-col 2xl:pb-[18.75rem] lg:pb-[11.75rem]">
-          <h2 className="uppercase text-center 2xl:text-[3.125rem] lg:text-[2rem] text-[#6B693B] font-americana">
+          <h2 className="uppercase text-center 2xl:text-[3.125rem] md:text-[2rem] text-[#6B693B] font-americana">
             Dạo quanh <br /> không gian xanh mát
           </h2>
           <img src="/bg-khonggianxanh.png" alt="khong gian xanh" />
@@ -268,7 +267,7 @@ const Home = () => {
           </div>
         </div>
         <BlogItem />
-        <div className="2xl:w-[26.25rem] lg:w-[16.25rem] absolute 2xl:top-[65%] lg:top-[69%] opacity-50">
+        <div className="2xl:w-[26.25rem] lg:w-[16.25rem] md:w-[9.375rem] absolute 2xl:top-[65%] lg:top-[69%] opacity-50">
           <img src="/khonggianxanh.png" alt="khong gian xanh" />
         </div>
       </div>

@@ -6,9 +6,9 @@ import { Button } from "@mui/material";
 const FarmTable = () => {
   return (
     <div className="farm-table 2xl:py-[4rem] lg:py-[1rem] relative">
-      <div className="content-table 2xl:h-[50rem] lg:h-[37rem] flex">
-        <div className="col1 absolute right-[45%] flex flex-col items-start w-[35%] gap-6">
-          <h2 className="uppercase 2xl:text-[4rem] lg:text-[2.5rem] text-[#6B693B]">
+      <div className="content-table 2xl:h-[50rem] lg:h-[37rem] md:h-[33rem] flex">
+        <div className="col1 absolute lg:right-[45%] md:right-[6%] flex flex-col items-start lg:w-[35%] lg:font-normal md:font-[600] md:w-[73%] gap-6">
+          <h2 className="uppercase 2xl:text-[4rem] lg:text-[2.5rem] md:text-[2rem] text-[#6B693B]">
             Farm to table
           </h2>
 
@@ -38,12 +38,12 @@ const FarmTable = () => {
             </Button>
           </Link>
         </div>
-        <div className="col2 absolute right-0 top-[18%] w-[60%]">
+        <div className="col2 absolute right-0 top-[18%] lg:w-[60%] lg:opacity-100 md:opacity-30 md:w-[76%]">
           <img src="/thit-ham.png" alt="thit ham sung my" />
         </div>
 
         <div className="img-farmtb ">
-        <img className="2xl:w-[16.75rem] lg:w-[11.75rem] absolute left-0 2xl:top-[44%] lg:top-[25%]" src="/farm-tb.png" alt="farm-table" />
+        <img className="2xl:w-[16.75rem] lg:w-[11.75rem] md:w-[9.375rem] absolute left-0 2xl:top-[44%] lg:top-[25%]" src="/farm-tb.png" alt="farm-table" />
       </div>
       </div>
      

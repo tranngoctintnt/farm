@@ -22,7 +22,7 @@
 
 .homCatSlider .cate .item:hover{
     box-shadow: 0 3px 6px #00000029,0 3px 6px #0000003b;
-    transform: translateY(-5px);
+    transform: translateY(5px);
 }
 
 .homCatSlider .cate .item:hover img{
