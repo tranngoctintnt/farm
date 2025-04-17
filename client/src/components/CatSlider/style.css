@@ -1,0 +1,39 @@
+.homCatSlider{
+    background-image: url('/background-cate.png');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* padding-top: 3rem; */
+}
+
+.homCatSlider h3{
+    text-transform: uppercase;
+    font-family: 'UTM Americana';
+}
+
+.homCatSlider .cate{
+    overflow: inherit;
+}
+
+.homCatSlider .cate .item{
+    transition: all .2s ease-in-out;
+    border: 1px solid #0000001a;
+}
+
+.homCatSlider .cate .item:hover{
+    box-shadow: 0 3px 6px #00000029,0 3px 6px #0000003b;
+    transform: translateY(5px);
+}
+
+.homCatSlider .cate .item:hover img{
+    animation: mover .7s infinite alternate;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}

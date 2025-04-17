@@ -1,0 +1,10 @@
+.ant-table-thead tr th:last-child{
+    width: 14%;
+}
+
+.ant-message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    right: auto !important;
+  }

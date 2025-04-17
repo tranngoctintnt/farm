@@ -1,0 +1,28 @@
+create database farm
+
+use farm
+
+create TABLE Cart (
+    idCart INT PRIMARY KEY IDENTITY(900000,1),
+    idCustomer INT NOT NULL,                  -- The customer owning the cart
+    createdAt DATETIME NOT NULL DEFAULT GETDATE(),
+    updatedAt DATETIME NOT NULL DEFAULT GETDATE(),
+    CONSTRAINT FK_Cart_Customer FOREIGN KEY (idCustomer)
+        REFERENCES Customers(idCustomer) ON DELETE CASCADE
+);
+
+CREATE TABLE CartItems (
+    idCartItem INT PRIMARY KEY IDENTITY(1000000,1),
+    idCart INT NOT NULL,                      -- The cart this item belongs to
+    idProduct INT NOT NULL,                   -- The product being added
+    quantity INT NOT NULL,                    -- Number of items
+    priceAtAdd DECIMAL(10,2) NOT NULL,        -- Price at the time of adding to cart
+    createdAt DATETIME NOT NULL DEFAULT GETDATE(),
+    updatedAt DATETIME NOT NULL DEFAULT GETDATE(),
+    CONSTRAINT FK_CartItem_Cart FOREIGN KEY (idCart)
+        REFERENCES Cart(idCart) ON DELETE CASCADE,
+    CONSTRAINT FK_CartItem_Product FOREIGN KEY (idProduct)
+        REFERENCES Products(idProduct) ON DELETE CASCADE,
+    CONSTRAINT CHK_Quantity_Cart CHECK (quantity > 0),
+    CONSTRAINT CHK_PriceAtAdd CHECK (priceAtAdd >= 0)
+);

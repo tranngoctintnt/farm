@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DFVN Salute", sans-serif;
+}
+
+@font-face {
+  font-family: "SFUInsigniaRegular";
+  src: url("./assets/font/SFUInsigniaRegular.ttf") format("truetype"); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UTM Americana";
+  src: url("./assets/font/UTM Americana.ttf") format("truetype"); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./assets/font/Montserrat-SemiBold.ttf") format("truetype"); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DFVN Salute";
+  src: url("./assets/font/DFVN Salute.otf") format("truetype"); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

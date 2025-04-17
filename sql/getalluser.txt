@@ -1,0 +1,105 @@
+// src/components/AdminUsersList.jsx
+import React, { useState, useEffect } from 'react';
+
+const AdminUsersList = () => {
+    const [adminUsers, setAdminUsers] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+
+    // Function to fetch all admin users
+    const fetchAdminUsers = async () => {
+        setLoading(true);
+        setError(null);
+
+        try {
+            // Retrieve token from localStorage (set this during login)
+            const token = localStorage.getItem('accessToken');
+            if (!token) {
+                throw new Error('No access token found. Please log in.');
+            }
+
+            const response = await fetch('http://localhost:3000/api/admin-users', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`, // Include JWT token
+                },
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Failed to fetch admin users');
+            }
+
+            const data = await response.json();
+            setAdminUsers(data);
+        } catch (err) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    // Fetch data on component mount
+    useEffect(() => {
+        fetchAdminUsers();
+    }, []);
+
+    // Handle logout (optional, if token expires or user logs out)
+    const handleLogout = () => {
+        localStorage.removeItem('accessToken');
+        setAdminUsers([]);
+        setError('Please log in again');
+    };
+
+    return (
+        <div>
+            <h2>Admin Users List</h2>
+            {loading && <p>Loading...</p>}
+            {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+            {!loading && !error && adminUsers.length === 0 && <p>No admin users found.</p>}
+            {!loading && !error && adminUsers.length > 0 && (
+                <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+                    <thead>
+                        <tr>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>ID</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Username</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Email</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Full Name</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Phone</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Role</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Created At</th>
+                            <th style={{ border: '1px solid black', padding: '8px' }}>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {adminUsers.map((user) => (
+                            <tr key={user.idAdminUser}>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{user.idAdminUser}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{user.username}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{user.email}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{user.fullName}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{user.phone}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>{user.role}</td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>
+                                    {new Date(user.createdAt).toLocaleString()}
+                                </td>
+                                <td style={{ border: '1px solid black', padding: '8px' }}>
+                                    {user.isActive ? 'Yes' : 'No'}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            )}
+            <button onClick={fetchAdminUsers} style={{ marginTop: '10px' }}>
+                Refresh List
+            </button>
+            <button onClick={handleLogout} style={{ marginTop: '10px', marginLeft: '10px' }}>
+                Logout
+            </button>
+        </div>
+    );
+};
+
+export default AdminUsersList;

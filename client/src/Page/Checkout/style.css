@@ -1,0 +1,7 @@
+.ant-card-body .ant-space{
+    width: 100%;
+}
+
+.ant-card-body .btn>div.ant-space-item:nth-child(2){
+    width: 100%;
+}

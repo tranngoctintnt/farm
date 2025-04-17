@@ -1,0 +1,16 @@
+# Bỏ qua thư mục node_modules trong tất cả các thư mục
+**/node_modules/
+
+# Bỏ qua thư mục build hoặc dist
+**/build/
+**/dist/
+
+# Bỏ qua file cấu hình môi trường
+**/.env
+
+# Ví dụ cụ thể cho từng phần:
+client/.env
+client/dist/
+admin/node_modules/
+server/logs/
+.rar

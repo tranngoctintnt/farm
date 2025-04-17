@@ -1,0 +1,56 @@
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #071f1a 0%, #2e5a33 100%);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .card-tilt {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-cta {
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .btn-cta:hover {
+    transform: scale(1.05);
+  }
+  
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .accordion-item {
+    transition: max-height 0.3s ease;
+  }
+  
+  .timeline-dot {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .timeline-dot:hover {
+    transform: scale(1.2);
+    background-color: #f4c430;
+  }
+  
+  .sticky-cta {
+    transition: opacity 0.3s ease;
+  }
+  .error-boundary {
+    padding: 2rem;
+    text-align: center;
+    color: #b91c1c;
+    background: #fef2f2;
+    border-radius: 12px;
+    margin: 2rem;
+  }

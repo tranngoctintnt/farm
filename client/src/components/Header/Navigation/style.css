@@ -1,0 +1,59 @@
+nav li button{
+    border-radius: 25px !important;
+}
+
+nav li button:first-child{
+    color: #494545;
+}
+
+nav li button:hover{
+    background: #fff;
+}
+
+
+nav li .submenu{
+    z-index: 100;
+    transition: all .2sease-in-out;
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003b;
+}
+nav li:hover .submenu{
+    display: block;
+     opacity: 1 !important;
+     top: 105%;
+     visibility: inherit;
+}
+
+nav li:hover .submenu button{
+
+   border-radius: 0.625rem !important;
+}
+
+nav li .submenu ul{
+    
+}
+
+nav li .submenu li:hover button{
+   color: #ff5252 !important;
+   border-radius: 0.625rem !important;
+
+}
+
+nav li .submenu li .submenu{
+    top:0px;
+    left: 120% !important;
+    opacity: 0 !important;
+}
+
+nav li .submenu li:hover .submenu{
+    left: 100% !important;
+    opacity: 1 !important;
+}
+
+nav li .submenu li .submenu button{
+    color: rgba(0,0,0,0.8) !important;
+}
+
+nav li .submenu li .submenu button:hover{
+   color: #ff5252 !important;
+    /* border-radius: 0.25rem !important; */
+}

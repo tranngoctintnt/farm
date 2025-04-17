@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'SFUInsigniaRegular';
+  src: url('./assets/font/SFUInsigniaRegular.ttf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Americana';
+  src: url('./assets/font/UTM Americana.ttf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('./assets/font/Montserrat-SemiBold.ttf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DFVN Salute';
+  src: url('./assets/font/DFVN Salute.otf') format('truetype'); /* Nếu có nhiều định dạng, thêm vào */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: auto;
+  /* padding-right: 0 !important; */
+  width: 100% !important;
+
+}
+/* body {
+} */
+
+button{
+  font-family: "SFUInsigniaRegular", sans-serif !important;
+
+}
+
+.btn-pri{
+  background: #D86500 !important;
+color: #fff !important;
+font-weight: 500;
+font-size: 1.3rem;
+}
+
+.link:hover{
+  color: #ff5252;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btnItemViewList button.active svg{
+  color: #ff5252;
+  opacity: 1;
+}
+.Mui-selected.MuiPaginationItem-page{
+  background: #D86500 !important;
+  color: #fff !important;}
+
+.zoomProductSliderThumbs .swiper-slide{
+  height: auto !important;
+}
+
+.zoomProductSliderThumbs .swiper-wrapper{
+  padding-top: 40px;
+  /* padding-bottom: 200px !important; */
+}
+.zoomProductSliderThumbs .swiper-button-next {
+  box-shadow: 2px 3px rgba(134, 133, 133, 0.5);
+
+  transition: all;
+  bottom: 0 !important;
+  right: inherit !important;
+  top: inherit !important;
+  width: 100%;
+  height: 1.8rem !important;
+  border-radius: 0px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-prev {
+  box-shadow: 2px 3px rgba(134, 133, 133, 0.5);
+  transition: all;
+  bottom: 0 !important;
+  left: inherit !important;
+  top: 22px !important;
+  width: 100%;
+  height: 1.8rem !important;
+  border-radius: 0px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next:hover, .zoomProductSliderThumbs .swiper-button-prev:hover{
+  background: #D86500 !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next::after{
+  transform: rotate(90deg);
+
+}
+
+.zoomProductSliderThumbs .swiper-button-prev::after{
+  transform: rotate(90deg);
+}
+
+.zoomProductSliderThumbs .swiper-button-next:hover::after{
+  color: #fff;
+}
+
+.zoomProductSliderThumbs .swiper-button-prev:hover::after{
+  color: #fff;
+}
+
+.iiz{
+  border-radius: 0.65rem;
+}
+
+.cartPanel .MuiPaper-root{
+  width: 30.15rem;
+}
+
+#account-menu .MuiPaper-root{
+  width: 250px !important;
+}
+
+.myAccountTabs li a{
+  position: relative;
+  display: block;
+}
+
+.myAccountTabs li a::before{
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background: #D86500;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.myAccountTabs li a.active::before{
+  height: 100%;
+  opacity: 1;
+  top: 0px;
+}
+
+/* .homeBanner .content-Banner h2{
+  font-family: "UTM Americana", sans-serif !important;
+} */
+
+/* .my-job .tilte-myjob{
+  font-family: "UTM Americana", sans-serif !important;
+} */
+
+/* 
+.deal h2{
+  font-family: "UTM Americana", sans-serif !important;
+  text-transform: uppercase;
+} */
+
+/* .deal h1.head-sung{
+  font-family: "DFVN Salute", sans-serif !important;
+  text-transform: uppercase;
+  color: #A94927;
+} */
+
+/* 
+.deal h1.discout{
+  font-family: "UTM Americana", sans-serif !important;
+
+  color: #534741;
+} */
+
+/* .product-list .title-product h2{
+  font-family: "UTM Americana", sans-serif !important;
+} */
+
+.swiper-button-prev, .swiper-button-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f,0 1px 2px #0000003d!important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: #000;
+  font-size: 22px !important;
+}
+
+.info-stf{
+  background-image: url(/public/bg-ntrai.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .frui .title-frui{
+  font-family: "UTM Americana", sans-serif !important;
+} */
+
+/* .swiper-slide .box img{
+  width: 375px !important;
+  height: 265px !important;
+} */
+
+.swiper-pagination .swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+}
+
+
+.swiper-pagination .swiper-pagination-bullet-active{
+  background:#ff5252 !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow: 0 1px 3px #0000001f,0 1px 2px #0000003d!important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+  color: #000;
+  font-size: 22px !important;
+}
+
+@media (max-width: 1024px) {
+  /* Kích thước màn hình nhỏ hơn lg */
+  .container {
+    width: 90%;
+  }
+}
