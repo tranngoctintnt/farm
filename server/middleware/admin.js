@@ -8,8 +8,9 @@ const authenticateToken = async (req, res, next) => {
     // console.log(req.path.startsWith('/admin'));
     // let token;
     const token = req.cookies.admin_access_token;
-    
-console.log('Token:', token);
+    // console.log(req.cookies);
+
+// console.log('Token:', token);
     if (!token) {
         // console.log('No token provided');
         return res.status(401).json({ message: 'No token provided' });

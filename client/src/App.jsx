@@ -50,7 +50,7 @@ function App() {
       fetchProducts();
     }
   }, [fetchProducts, products, loading, hasFetched]);
-
+  
   const toggleCartPanel = (newOpen) => () => {
     if (!user) {
       setOpenCartPanel(false);
@@ -99,7 +99,7 @@ function App() {
   if (error) {
     return <div className="error-message">{error}</div>;
   }
-
+  
   return (
     <>
       <MyContext.Provider value={contextValues}>

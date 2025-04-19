@@ -62,23 +62,23 @@ const Home = () => {
                 alt="thu-hoach-nho"
               />
             </div>
-            <div className="col-2 w-[40%] lg:mt-[1.25rem] max-md:container max-md:px-10 m-auto lg:ml-[1.875rem] md:m-0">
-              <div className="description-myjob leading-8">
-                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem]">
+            <div className="col-2 w-[40%] lg:mt-[1.25rem] max-md:container max-md:px-10 max-sm:px-6 m-auto lg:ml-[1.875rem] md:m-0">
+              <div className="description-myjob leading-8 max-sm:pb-4">
+                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] max-sm:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem]">
                   Gieo trồng không chỉ là cây trái, mà là niềm tin vào đất mẹ và
                   thực phẩm sạch.
                 </p>
-                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
+                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] max-sm:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Mỗi hạt giống nảy mầm là một cam kết, mỗi mùa vụ là một hành
                   trình trao đi sự tươi lành.
                 </p>
 
-                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
+                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] max-sm:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Trồng bằng tình yêu, chăm bằng sự tận tâm, để mỗi bữa ăn không
                   chỉ ngon mà còn trọn vẹn thiên nhiên.
                 </p>
 
-                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
+                <p className="2xl:text-[1.2rem] !leading-7 lg:text-[1rem] md:text-[0.875rem] max-sm:text-[0.875rem] text-[#6B693B] 2xl:mt-[2.375rem] lg:mt-[1rem]">
                   Gieo mầm hôm nay, gặt hái sức khỏe mai sau!”
                 </p>
               </div>
@@ -240,10 +240,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-6 sm:py-2 md:py-2 lg:py-4 xl:py-6 2xl:py-8">
+      <section className="py-6 sm:py-4 md:py-4 lg:py-4 xl:py-6 2xl:py-8">
         <div className="frui relative flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
           {/* Hình ảnh bên trái */}
-          <div className="col lg:w-full absolute top-0 md:w-[25%] flex max-[768px]:hidden justify-center md:justify-start">
+          <div className="col lg:w-full absolute top-0 md:w-full flex max-[768px]:hidden justify-center md:justify-start">
             <img
               className="w-32 sm:w-40 md:w-[9.563rem] lg:w-[12.75rem] xl:w-[14rem] 2xl:w-[18rem] h-auto object-cover md:absolute md:top-0 md:left-0"
               src="/bg-luu.png"
@@ -252,7 +252,7 @@ const Home = () => {
           </div>
 
           {/* Nội dung chính */}
-          <div className="col w-full md:w-[70%] lg:w-[50%] flex flex-col items-center text-center">
+          <div className="col w-full md:w-[70%] lg:w-[50%] max-sm:w-[85%] flex flex-col items-center text-center">
             <h2 className="title-frui uppercase text-[#6B693B] font-americana text-2xl sm:text-[1.8rem] md:text-2xl lg:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] pb-4 sm:pb-6 md:pb-8 lg:pb-[1rem] xl:pb-10 2xl:pb-10">
               Các loại trái
             </h2>
@@ -285,7 +285,7 @@ const Home = () => {
           </div>
 
           {/* Hình ảnh bên phải */}
-          <div className="col lg:w-full md:w-[25%] max-[768px]:hidden absolute flex justify-center md:justify-end">
+          <div className="col lg:w-full md:w-full max-[768px]:hidden absolute flex justify-center md:justify-end">
             <img
               className="w-32 sm:w-40 md:w-[9.563rem] lg:w-[15.375rem] xl:w-[18rem] 2xl:w-[23.75rem] h-auto object-cover md:absolute md:top-0 md:right-0"
               src="/bg-sung.png"

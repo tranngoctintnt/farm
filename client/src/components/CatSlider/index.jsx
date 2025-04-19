@@ -20,7 +20,8 @@ const HomeCatSlier = () => {
           // pagination={{ clickable: true }}
           className="w-full container"
           breakpoints={{
-            360: { slidesPerView: 3 },
+
+            320: { slidesPerView: 3 },
 
             380: { slidesPerView: 3 },
             640:{ slidesPerView: 3 },

@@ -107,12 +107,15 @@ export function AuthProvider({ children }) {
       const response = await api.post("/user/login", credentials, {
         withCredentials: true,
       });
-      setUser(response.data.user);
+      setUser(response.data.user); 
+      setLoading(true);
+      message.success("Đăng nhập thành công!");
       setAccessToken(response.data.accessToken); // Lưu accessToken từ response
       setIsAuthenticated(true);
     } catch (err) {
       setAuthError(err.message);
-      console.error("Login failed:", err);
+      message.error(err.response.data.message)
+      console.error("Login failed:", err.response?.data);
     }
   }, []);
 

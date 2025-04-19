@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoEyeOutline } from "react-icons/io5";
 
-import { Table, Space,Button, Tag } from "antd";
+import { Table, Space, Button, Tag } from "antd";
 import BASE_URL from "../../config";
 
 const CustomerList = () => {
@@ -30,37 +30,45 @@ const CustomerList = () => {
         current: response.data.page,
         total: response.data.total,
       });
-// console.log(response.data.groupedArray);
+      console.log(response.data);
       setError("");
     } catch (err) {
       setError(err.response?.data?.message || "Error loading categories");
     }
   };
 
-  if(!customer || customer.length === 0) {
-   return <p>Hiện tại không có danh sách khách hàng</p>;
+  if (!customer || customer.length === 0) {
+    return <p>Hiện tại không có danh sách khách hàng</p>;
   }
 
-  // console.log(customer);
-
   // Kết hợp dữ liệu từ customer và groupedArray
-  const combinedData = customer.groupedArray.map((group) => {
-    const newDataCustomer = customer.customer.find(
-      (cust) => cust.idCustomer === parseInt(group.idCustomer)
-    );
-    return {
-      idCustomer: group.idCustomer,
-      customerName: group.customerName,
-      totalAmount: group.totalAmount,
-      phone: newDataCustomer.phone ,
-      isEmailVerified: newDataCustomer.isEmailVerified,
-      fullName: newDataCustomer.fullName ,
-      email: newDataCustomer.email ,
-      avatar: newDataCustomer.avatar,
-    };
-  });
-
-  console.log(combinedData);
+  const combinedData = customer.groupedArray.length === 0
+  ? customer.customer.map((cust) => ({
+      idCustomer: cust.idCustomer,
+      customerName: cust.customerName || "",
+      totalAmount: 0,
+      phone: cust.phone || "",
+      isEmailVerified: cust.isEmailVerified || false,
+      fullName: cust.fullName || "",
+      email: cust.email || "",
+      avatar: cust.avatar || "",
+    }))
+  : customer.groupedArray.map((group) => {
+      const newDataCustomer = customer.customer.find(
+        (cust) => cust.idCustomer === parseInt(group.idCustomer)
+      );
+      return {
+        idCustomer: group.idCustomer,
+        customerName: group.customerName,
+        totalAmount: group.totalAmount,
+        phone: newDataCustomer?.phone || "",
+        isEmailVerified: newDataCustomer?.isEmailVerified || false,
+        fullName: newDataCustomer?.fullName || "",
+        email: newDataCustomer?.email || "",
+        avatar: newDataCustomer?.avatar || "",
+      };
+    });
+  console.log(customer.customer);
 
   const columns = [
     {
@@ -120,9 +128,10 @@ const CustomerList = () => {
       title: "Spent",
       key: "totalAmount",
       dataIndex: "totalAmount",
-      render: (totalAmount) => <strong>{totalAmount.toLocaleString("vi-VN")} đ</strong>,
+      render: (totalAmount) => (
+        <strong>{totalAmount.toLocaleString("vi-VN")} đ</strong>
+      ),
       sorter: (a, b) => a.totalAmount - b.totalAmount,
-
     },
     {
       title: "Action",
@@ -146,7 +155,6 @@ const CustomerList = () => {
         </Space>
       ),
     },
-
   ];
 
   return (

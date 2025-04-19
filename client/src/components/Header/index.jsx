@@ -106,15 +106,15 @@ const Header = ({categoriesData}) => {
   <div className="container mx-auto flex items-center justify-between py-2 px-4 lg:px-8 border-b-[1px] border-[#e98914]">
     {/* Logo */}
     <div className="col1 w-auto">
-      <Link to="/">
+      <Link to="https://stf.suoitien.vn">
         <img className="w-[60px] lg:w-[80px]" src="/logo-stf.png" alt="logo" />
       </Link>
     </div>
 
     {/* Search Bar */}
-    <div className="hidden lg:block col2 w-[40%]">
+    {/* <div className="hidden lg:block col2 w-[40%]">
       <Search />
-    </div>
+    </div> */}
 
     {/* User Actions */}
     <div className="col3 flex items-center gap-4">

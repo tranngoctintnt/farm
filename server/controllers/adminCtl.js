@@ -13,10 +13,11 @@ const { dbConfig, JWT_SECRET, updateRefreshToken, isTokenBlacklisted, blacklistT
 exports.checkAuth = async(req, res) => {
     // Assuming you're using the cookie-based auth from previous examples
     // console.log('Cookies received:', req.cookies);
+    // console.log( req.cookies);
     const token = req.cookies.admin_access_token;
        // Debug
     // console.log('Received token:', token); 
- 
+ console.log(token);
     if (!token) {
       return res.status(401).json({ message: 'Not authenticated' });
     }

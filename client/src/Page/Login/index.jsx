@@ -130,8 +130,8 @@ const Login = () => {
 
   const handleLogin = async (credentials) => {
     await login(credentials);
-    message.success("Đăng nhập thành công");
-        navigate("/", { state: { message: "Login successful" } });
+    // message.success("Đăng nhập thành công");
+    //     navigate("/", { state: { message: "Login successful" } });
   };
 
   const handleGoogleLogin = () => {

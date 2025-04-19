@@ -20,7 +20,7 @@ const ProductItems = ({product}) => {
     const {fetchCart} = useCart();
   
   // console.log(product.idProduct);
-  const truncateText = (text, maxLength = 50) => {
+  const truncateText = (text, maxLength = 40) => {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
   };
 
@@ -60,17 +60,17 @@ const ProductItems = ({product}) => {
         <div className="productItem w-full shadow-lg rounded-md overflow-hidden border border-[rgba(0,0,0,0.1)]">
   <div className="imgWrapper w-full overflow-hidden rounded-md relative group">
     <Link to={`/product/${product.idProduct}`}>
-      <div className="img p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-3 h-40 sm:h-48 md:h-[284px] lg:h-[13.875rem] xl:h-[15rem] 2xl:h-[16.875rem] flex items-center justify-center overflow-hidden">
+      <div className="img lg:h-[300px] sm:h-[200px] max-sm:h-[200px] overflow-hidden">
         <img
-          className="h-full w-auto object-cover"
+          className="w-full h-full object-cover"
           src={`${BASE_URL}${img[0]}`}
           alt={product.nameProdcut}
         />
-        <img
+        {/* <img
           className="absolute p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-3 h-full w-auto object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-105"
           src={`${BASE_URL}${img[1]}`}
           alt={product.nameProdcut}
-        />
+        /> */}
       </div>
     </Link>
 
@@ -92,23 +92,23 @@ const ProductItems = ({product}) => {
     </div>
   </div>
 
-  <div className="info max-md:ml-[20px] p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-3 py-3 sm:py-4 md:py-5 ]">
-    <h6 className="text-sm sm:text-base md:text-lg lg:text-[1.2rem] xl:text-[1.25rem] 2xl:text-[1.2rem] font-americana">
+  <div className="info p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 2xl:p-3 py-3 sm:py-4 md:py-5 ]">
+    <h6 className="text-[18px] sm:text-base md:text-[18px] lg:text-[1.2rem] xl:text-[1.25rem] 2xl:text-[1.2rem] font-americana">
       <Link to={`/product/${product.idProduct}`} className="transition-all hover:text-[#D86500]">
         {product.nameProdcut}
       </Link>
     </h6>
-    <h3 className="title text-xs sm:text-sm md:text-base lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1rem] mt-1 sm:mt-2 md:mt-3 font-medium text-[#000]">
+    <h3 className="title text-[16px] sm:text-[16px] md:text-[16px] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1rem] mt-1 sm:mt-2 md:mt-3 font-medium text-[#000]">
       <Link to={`/product/${product.idProduct}`} className="transition-all hover:text-[#D86500]">
-        {truncateText(<p>{product.tilteProdcut}</p>)}
+        {truncateText(product.tilteProdcut)}
       </Link>
     </h3>
     <div className="flex items-center gap-2 sm:gap-3 md:gap-4 mt-1 sm:mt-2">
       <span className="old-price line-through text-gray-500 font-medium text-xs sm:text-sm md:text-base">
-        {product.oldPrice.toLocaleString("vi-VN")} <span>VND</span>
+        {product.oldPrice.toLocaleString("vi-VN")} <span>đ</span>
       </span>
       <span className="new-price text-[#D86500] font-bold text-sm sm:text-base md:text-lg">
-        {product.newPrice.toLocaleString("vi-VN")} <span>VND</span>
+        {product.newPrice.toLocaleString("vi-VN")} <span>đ</span>
       </span>
     </div>
   </div>

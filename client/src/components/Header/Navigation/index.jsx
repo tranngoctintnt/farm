@@ -40,11 +40,12 @@ const Navigation = React.memo(({ data }) => {
       children: data.map((category) => ({
         key: category.idCategory,
         label: category.nameCategory,
-        onClick: () => {navigate(`/productList?category=${category.idCategory}`);
-      setOpen(false);
-      },
+        onClick: () => {
+          navigate(`/productList?category=${category.idCategory}`);
+          setOpen(false);
+        },
       })),
-    }, 
+    },
     {
       key: "sub2",
       label: "Special",
@@ -192,18 +193,15 @@ const Navigation = React.memo(({ data }) => {
                       </ul>
                     </div> */}
                   </li>
-                  {
-                    data.map((category) =>(
-<li className="list-none w-full">
-                    <Link key={category.idCategory} to="/">
-                      <Button className="!text-[#000000b3] w-full !text-[1rem] !text-left !justify-start !rounded-none">
-                        {category.nameCategory}
-                      </Button>
-                    </Link>
-                  </li>
-                    ))
-                  }
-                  
+                  {data.map((category) => (
+                    <li key={category.idCategory} className="list-none w-full">
+                      <Link key={category.idCategory} to="/">
+                        <Button className="!text-[#000000b3] w-full !text-[1rem] !text-left !justify-start !rounded-none">
+                          {category.nameCategory}
+                        </Button>
+                      </Link>
+                    </li>
+                  ))}
 
                   {/* <li className="list-none w-full">
                     <Link to="/">

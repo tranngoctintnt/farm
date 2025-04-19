@@ -22,7 +22,7 @@ const BlogItem = () => {
       // pagination={{ clickable: true }}
       className="w-full"
       breakpoints={{
-        380: { slidesPerView: 1 },
+        320: { slidesPerView: 1 },
         640:{ slidesPerView: 1 },
         768: { slidesPerView: 2 },
         1024: { slidesPerView: 2 },

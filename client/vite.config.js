@@ -17,6 +17,7 @@ export default defineConfig({
   base: './', // Đảm bảo đường dẫn tương đối
   build: {
     outDir: "dist", // Đảm bảo đúng thư mục output
+    assetsInlineLimit: 0,  
   emptyOutDir: true, // Xóa thư mục cũ trước khi build
     rollupOptions: {
       output: {
